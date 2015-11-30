@@ -23,6 +23,11 @@
   src: url(../fonts/Intro-Bold.ttf);
 }
 
+@font-face {
+  font-family: MarcelleScript;
+  src: url(../fonts/MarcelleScript.ttf);
+}
+
 * {
   font-size: 10pt;
   color: #333333;
@@ -140,27 +145,92 @@ footer {
 footer div {
   display: inline-block;
   vertical-align: top;
+  padding-right: 120px;
+}
+
+footer .col-4 {
+  padding-right: 0;
 }
 
 footer a {
   display: block;
+  margin-bottom: 10px;
 }
 
 footer * {
   color: #999999;
 }
 
+footer p {
+  padding-bottom: 10px;
+}
+
 footer .bold {
   color: #333333;
   font-family: Intro-Bold,Arial, Helvetica, sans-serif;
   font-size: 1.2em;
+  margin-bottom: 18px;
 }
 
 footer .dark {
   color: #333333;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+footer .button-map {
+  box-sizing: border-box;
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  background-color: #eeb044;
+  background-image: url(../img/footer-map.png);
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+  line-height: 50px;
+  padding-left: 35px;
+  font-family: Intro-Bold,Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-top: 20px;
+  box-shadow: 0px 2px 5px -2px #333333;
 }
 
 .social {
   background: url(../img/background.png);
   height: 130px;
+}
+
+.social .social-wrapper {
+  margin: 0 auto;
+  width: 380px;
+}
+
+.social a {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  color: white;
+  font-family: Intro-Bold,Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 45px;
+}
+
+.social .fb {
+  background-color: #075dde;
+}
+
+.social .vk {
+  background-color: #1576b3;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.social .inst {
+  font-size: 1.5em;
+  background-color: #1799eb;
+  font-family: MarcelleScript,Arial, Helvetica, sans-serif;
 }
