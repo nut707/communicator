@@ -1,0 +1,166 @@
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Intro-Regular;
+  src: url(../fonts/Intro-Regular.ttf);
+}
+
+@font-face {
+  font-family: Intro-Book;
+  src: url(../fonts/Intro-Book.ttf);
+}
+
+@font-face {
+  font-family: Intro-Bold;
+  src: url(../fonts/Intro-Bold.ttf);
+}
+
+* {
+  font-size: 10pt;
+  color: #333333;
+  margin: 0;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headder-wrapper {
+  position: relative;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+}
+
+header {
+  padding: 25px 140px;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+
+nav a:first-child {
+  padding-left: 0px;
+}
+
+nav a:last-child {
+  padding-right: 0px;
+}
+
+.logo {
+  display: inline-block;
+  width: 235px;
+  height: 37px;
+  margin: 0px 70px;
+  background: url(/img/header-logo.png) no-repeat 50% 100%;
+  vertical-align: middle;
+}
+
+.search-user-cart-block {
+  display: inline-block;
+  float: right;
+}
+
+.search-user-cart-block a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #cccccc;
+  border-radius: 40px;
+  font-family: OpenSans-Bold,Arial, Helvetica, sans-serif;
+}
+
+.search-user-cart-block .search {
+  display: inline-block;
+  background: url(/img/header-search.png) no-repeat 50%;
+}
+
+.search-user-cart-block .user {
+  display: inline-block;
+  background: url(/img/header-user.png) no-repeat 50%;
+}
+
+.search-user-cart-block .cart {
+  display: inline-block;
+  width: auto;
+  background: url(/img/header-cart.png) no-repeat 20px 50%;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+.search-user-cart-block .cart .amount, .search-user-cart-block .cart .total-price {
+  font-size: 1.2em;
+}
+
+.search-user-cart-block .cart .amount {
+  margin: 0 10px;
+  padding: 0 15px;
+  line-height: 40px;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+
+.search-user-cart-block .cart .total-price {
+  padding-right: 15px;
+}
+
+.footer-wrapper {
+  position: relative;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+}
+
+footer {
+  padding-top: 60px;
+  height: 350px;
+  font-family: Intro-Book,Arial, Helvetica, sans-serif;
+}
+
+footer div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer a {
+  display: block;
+}
+
+footer * {
+  color: #cccccc;
+}
+
+footer .bold {
+  color: #333333;
+  font-family: Intro-Bold,Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+footer .dark {
+  color: #333333;
+}
+
+.social {
+  background: url(../img/background.png);
+  height: 130px;
+}

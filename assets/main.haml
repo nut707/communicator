@@ -1,0 +1,62 @@
+!!!
+%html
+  %head
+    %meta{charset:"utf-8"}
+    %title
+      Главная
+    / %script{src:'js/jquery-2.1.4.js'}
+    / %script{src:'jquery-ui-1.11.4.custom/jquery-ui.min.js'}
+    / %link{rel:'stylesheet',href:'jquery-ui-1.11.4.custom/jquery-ui.min.css'}
+    %link{rel:'stylesheet',href:'style/style.css'}
+  %body
+    .headder-wrapper
+      %header.container
+        %nav
+          %a{href:'/main.html'} Главная
+          %a{href:'/catalog.html'} Каталог
+          %a{href:'#'} Скидки
+          %a{href:'#'} Магазины
+        %a.logo{href:'/main.html'}
+        .search-user-cart-block
+          %a.search{href:'#'}
+          %a.user{href:'#'}
+          %a.cart{href:'#'}
+            %span.amount 
+              2
+            %span.total-price
+              45000 Р
+    .container
+    .footer-wrapper
+      %footer.container
+        .col-1
+          %p
+            © Коммуникатор, 2015 г.
+          %p
+            Все права защищены.
+          %p.dark
+            разработка сайта
+          %img{src: '/img/footer-logo.png'}
+        .col-2
+          %a.bold{href:'/catalog.html'} Каталог
+          %a{href:'#'} Смартфоны 
+          %a{href:'#'} Планшеты 
+          %a{href:'#'} Аксессуары 
+          %a{href:'#'} Электронные книги 
+          %a{href:'#'} Чехлы
+          %a{href:'#'} Наушники
+          %a{href:'#'} PSP
+          %a{href:'#'} Зарядные устройства
+        .col-3
+          %a.bold{href:'#'} О компании
+          %a{href:'#'} Почему мы
+          %a{href:'#'} Оплата 
+          %a{href:'#'} Достака
+          %a{href:'#'} Скидки
+          %a{href:'#'} Магазины
+        .col-4
+          %p.bold
+            8 (800) 29 19 099 
+          %p
+            Россия, г. Влидивосток,
+            %br ул. Пограничная 12, офис 34
+    .social
