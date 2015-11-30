@@ -1,5 +1,6 @@
 $grey: #333333;
 $light-grey: #cccccc;
+$grey9: #999999;
 
 @font-face{
   font-family: OpenSans-Bold;
@@ -129,7 +130,7 @@ footer{
     display: block;
   }
   *{
-    color: $light-grey;
+    color: $grey9;
   }
   .bold{
     color: $grey;
