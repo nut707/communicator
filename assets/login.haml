@@ -37,7 +37,51 @@
         %a.psp{href:'#'} PSP
         %a.headphones{href:'#'} Наушники
         %a.accums{href:'#'} Зарядные устройства
+    .subheader.grey-bg
+      .container
+        %h1.title Вход/регистрация
+        %a.back-button{href:'#'} 
+          Назад
+          %span.back-icon
+    .breadcrumps.container
+      %a{href:'/main.html'} Главная
+      .triangle-right
+      .current-page Вход/Регистрация
     .container
+      .catalog-list-login.grey-bg
+        %a.dark{href:'/catalog.html'} Каталог
+        %a{href:'#'} Смартфоны 
+        %a{href:'#'} Планшеты 
+        %a{href:'#'} Аксессуары 
+        %a{href:'#'} Электронные книги 
+        %a{href:'#'} Игры и гаджеты
+        %a{href:'#'} Чехлы
+      .signin
+        %form
+          %h2 Вход
+          %input.grey-bg{placeholder:'Телефон'}
+          %br 
+          %input.grey-bg{type: 'password',placeholder:'Пароль'}
+          %br
+          %input.blue-button{type:'submit', value: 'ВОЙТИ'}
+        .soc-signin 
+          %p или через соцсети
+          .soc-signin-icons
+            %a.fb{href:'#'}
+            %a.vk{href:'#'}
+            %a.ok{href:'#'}
+            %a.tw{href:'#'}
+      .reg
+        %form
+          %h2 Регистрация
+          %input.grey-bg{placeholder:'Телефон/Email'}
+          %br
+          %input.blue-button{type:'submit', value: 'ЗАРЕГИСТРИРОВАТЬСЯ'}
+        .desc
+          %p 
+            Регистрация позволяет вам 
+            следить за заказами, получать
+            скидки и бонусы
     .footer-wrapper
       %footer.container
         .col-1

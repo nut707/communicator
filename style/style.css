@@ -28,19 +28,32 @@
   src: url(../fonts/MarcelleScript.ttf);
 }
 
-* {
-  font-size: 10pt;
-  color: #333333;
+@font-face {
+  font-family: rub;
+  src: url(../fonts/RUBSN.otf);
+}
+
+html * {
   margin: 0;
 }
 
+body {
+  font-size: 10pt;
+  color: #333333;
+}
+
 .container {
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
 }
 
 a {
+  color: #333333;
   text-decoration: none;
+}
+
+.rub {
+  font-family: rub, Arial, Helvetica, sans-serif;
 }
 
 .headder-wrapper {
@@ -131,9 +144,130 @@ nav a:last-child {
   padding-right: 15px;
 }
 
+#catalog-dropdown {
+  cursor: pointer;
+}
+
+.catalog-dropdown-wrapper {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+  z-index: 100;
+  background: white;
+  width: 100%;
+}
+
+.catalog-dropdown {
+  overflow: hidden;
+}
+
+.catalog-dropdown a {
+  font-family: Intro-Book,Arial, Helvetica, sans-serif;
+  width: 240px;
+  height: 210px;
+  display: inline-block;
+  text-align: center;
+  line-height: 350px;
+  vertical-align: bottom;
+  font-size: 1.1em;
+  box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.11);
+  margin-top: -5px;
+}
+
+.catalog-dropdown .smarts {
+  background: url(/img/katalog-dropdown-smarts.jpg) no-repeat 50% 50%;
+}
+
+.catalog-dropdown .tablets {
+  background: url(/img/katalog-dropdown-tablets.jpg) no-repeat 50% 50%;
+}
+
+.catalog-dropdown .accses {
+  background: url(/img/katalog-dropdown-accses.jpg) no-repeat 50% 50%;
+}
+
+.catalog-dropdown .ebooks {
+  background: url(/img/katalog-dropdown-ebooks.jpg) no-repeat 60% 50%;
+}
+
+.catalog-dropdown .cases {
+  background: url(/img/katalog-dropdown-cases.jpg) no-repeat 50% 50%;
+}
+
+.catalog-dropdown .psp {
+  background: url(/img/katalog-dropdown-psp.jpg) no-repeat 50% 50%;
+}
+
+.catalog-dropdown .headphones {
+  background: url(/img/katalog-dropdown-headphones.jpg) no-repeat 50% 50%;
+}
+
+.catalog-dropdown .accums {
+  background: url(/img/katalog-dropdown-accums.jpg) no-repeat 50% 50%;
+}
+
+.grey-bg {
+  background-color: #f2f2f2;
+}
+
+.subheader {
+  padding: 25px 0;
+}
+
+.subheader .title, .subheader .back-button, .subheader .back-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.subheader .title {
+  font-family: Intro-Bold,Arial, Helvetica, sans-serif;
+  font-size: 2.3em;
+  text-transform: uppercase;
+}
+
+.subheader .back-button {
+  color: #999999;
+  float: right;
+  font-family: Intro-Book,Arial, Helvetica, sans-serif;
+}
+
+.subheader .back-icon {
+  margin-left: 10px;
+  width: 31px;
+  height: 31px;
+  background: url(/img/back-icon.png) no-repeat 50% 50%;
+  border-radius: 100%;
+  border: 1px solid #cccccc;
+}
+
+.breadcrumps {
+  font-family: Intro-Book,Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  margin: 25px auto;
+}
+
+.breadcrumps * {
+  display: inline-block;
+}
+
+.breadcrumps a {
+  color: #0099cc;
+}
+
+.breadcrumps .triangle-right {
+  margin: 0 5px;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-left: 4px solid #999999;
+}
+
+.breadcrumps .current-page {
+  color: #999999;
+}
+
 .footer-wrapper {
   position: relative;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.11);
 }
 
 footer {
@@ -176,6 +310,7 @@ footer .dark {
   color: #333333;
   padding-top: 50px;
   padding-bottom: 15px;
+  font-size: 0.9em;
 }
 
 footer .button-map {
@@ -233,4 +368,149 @@ footer .button-map {
   font-size: 1.5em;
   background-color: #1799eb;
   font-family: MarcelleScript,Arial, Helvetica, sans-serif;
+}
+
+.blue-button {
+  background: #0099cc;
+  border: none;
+  border-radius: 4em;
+  color: white;
+  font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.catalog-list-login, .signin, .reg {
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 0 5px 0 #cccccc;
+}
+
+.catalog-list-login {
+  border-radius: 5px;
+  padding: 28px;
+}
+
+.catalog-list-login a {
+  display: block;
+  color: #0099cc;
+  text-decoration: underline;
+  margin-bottom: 15px;
+  font-size: 1.15em;
+  font-family: OpenSans-Regular,Arial, Helvetica, sans-serif;
+}
+
+.catalog-list-login .dark {
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+}
+
+.signin, .reg {
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 20px;
+}
+
+.signin form, .reg form {
+  margin: 0 30px;
+}
+
+.signin input:not(.blue-button), .reg input:not(.blue-button) {
+  border: none;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.signin input, .reg input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.1em;
+}
+
+.signin .blue-button, .reg .blue-button {
+  margin-top: 10px;
+}
+
+.signin h2, .reg h2 {
+  text-align: center;
+  font-family: Intro-Bold,Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.signin {
+  width: 360px;
+  margin: 0 20px;
+}
+
+.soc-signin, .desc {
+  border-top: 1px solid #eee;
+  margin-top: 25px;
+}
+
+.desc {
+  width: 360px;
+  padding: 55px 0;
+}
+
+.desc p {
+  margin: 0 25px;
+  font-size: 1.4em;
+  font-family: Intro-Book,Arial, Helvetica, sans-serif;
+  color: #999999;
+}
+
+.soc-signin {
+  padding-bottom: 25px;
+}
+
+.soc-signin p {
+  font-size: 1.4em;
+  font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+  margin: 15px 0;
+}
+
+.soc-signin .fb {
+  background: url(../img/login-fb.png) no-repeat 50% 50%;
+  border-radius: 100%;
+  border: 1px solid #333333;
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  margin: 0 7.5px;
+}
+
+.soc-signin .vk {
+  background: url(../img/login-vk.png) no-repeat 50% 50%;
+  border-radius: 100%;
+  border: 1px solid #333333;
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  margin: 0 7.5px;
+}
+
+.soc-signin .ok {
+  background: url(../img/login-ok.png) no-repeat 50% 50%;
+  border-radius: 100%;
+  border: 1px solid #333333;
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  margin: 0 7.5px;
+}
+
+.soc-signin .tw {
+  background: url(../img/login-tw.png) no-repeat 50% 50%;
+  border-radius: 100%;
+  border: 1px solid #333333;
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  margin: 0 7.5px;
 }

@@ -2,6 +2,7 @@ $grey: #333333;
 $light-grey: #cccccc;
 $grey9: #999999;
 $orange: #eeb044;
+$blue:#0099cc;
 
 @font-face{
   font-family: OpenSans-Bold;
@@ -27,19 +28,29 @@ $orange: #eeb044;
   font-family: MarcelleScript;
   src: url(../fonts/MarcelleScript.ttf);
 }
+@font-face{
+  font-family: rub;
+  src: url(../fonts/RUBSN.otf);
+}
 
 
-*{
-  font-size: 10pt;
-  color: $grey;
+html *{
   margin: 0;
 }
+body{
+  font-size: 10pt;
+  color: $grey;
+}
 .container{
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
 }
 a{
+  color: $grey;
   text-decoration: none;
+}
+.rub{
+  font-family: rub, Arial, Helvetica, sans-serif;
 }
 
 //HEADER
@@ -118,10 +129,113 @@ nav{
   }
 }
 
+//dropdown header
+#catalog-dropdown{
+  cursor: pointer;
+}
+.catalog-dropdown-wrapper{
+  display: none;
+  position: absolute;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+  z-index: 100;
+  background: white;
+  width: 100%;
+}
+.catalog-dropdown{
+  overflow: hidden;
+  a{
+    font-family: Intro-Book,Arial, Helvetica, sans-serif;
+    width: 240px;
+    height: 210px;
+    display: inline-block;
+    text-align: center;
+    line-height: 350px;
+    vertical-align: bottom;
+    font-size: 1.1em;
+    box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.11);
+    margin-top: -5px;
+  }
+  .smarts{
+    background: url(/img/katalog-dropdown-smarts.jpg) no-repeat 50% 50%;
+  }
+  .tablets{
+    background: url(/img/katalog-dropdown-tablets.jpg) no-repeat 50% 50%;
+  }
+  .accses{
+    background: url(/img/katalog-dropdown-accses.jpg) no-repeat 50% 50%;
+  }
+  .ebooks{
+    background: url(/img/katalog-dropdown-ebooks.jpg) no-repeat 60% 50%;
+  }
+  .cases{
+    background: url(/img/katalog-dropdown-cases.jpg) no-repeat 50% 50%;
+  }
+  .psp{
+    background: url(/img/katalog-dropdown-psp.jpg) no-repeat 50% 50%;
+  }
+  .headphones{
+    background: url(/img/katalog-dropdown-headphones.jpg) no-repeat 50% 50%;
+  }
+  .accums{
+    background: url(/img/katalog-dropdown-accums.jpg) no-repeat 50% 50%;
+  }
+}
+
+//subheader
+.grey-bg{
+  background-color: rgb(242, 242, 242);
+}
+.subheader
+{
+  padding: 25px 0;
+  .title,.back-button,.back-icon{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .title{
+    font-family: Intro-Bold,Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+    text-transform: uppercase;
+  }
+  .back-button{
+    color: $grey9;
+    float: right;
+    font-family: Intro-Book,Arial, Helvetica, sans-serif;
+  }
+  .back-icon{
+    margin-left: 10px;
+    width: 31px;
+    height: 31px;
+    background: url(/img/back-icon.png) no-repeat 50% 50%;
+    border-radius: 100%;
+    border: 1px solid $light-grey;
+  }
+}
+//breadcrumps
+.breadcrumps{
+  font-family: Intro-Book,Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  margin: 25px auto;
+  *{
+    display: inline-block;
+  }
+  a{
+    color: $blue;
+  }
+  .triangle-right{
+    margin: 0 5px;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    border-left: 4px solid $grey9;
+  }
+  .current-page{
+    color: $grey9;
+  }
+}
 //FOOTER
 .footer-wrapper{
   position: relative;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.11);
 }
 footer{
   padding-top: 60px;
@@ -155,6 +269,7 @@ footer{
     color: $grey;
     padding-top: 50px;
     padding-bottom: 15px;
+    font-size: 0.9em;
   }
   .button-map{
     box-sizing: border-box;
@@ -207,5 +322,131 @@ footer{
     font-size: 1.5em;
     background-color: #1799eb;
     font-family: MarcelleScript,Arial, Helvetica, sans-serif;
+  }
+}
+
+//login
+.blue-button{
+  background: $blue;
+  border:none;
+  border-radius: 4em;
+  color: white;
+  font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.catalog-list-login,.signin,.reg{
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 0 5px 0 $light-grey;
+}
+.catalog-list-login{
+  border-radius: 5px;
+  padding: 28px;
+  a{
+    display: block;
+    color: $blue;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    font-size: 1.15em;
+    font-family: OpenSans-Regular,Arial, Helvetica, sans-serif;
+  }
+  .dark{
+    text-transform: uppercase;
+    color: $grey;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+  }
+}
+.signin,.reg{
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 20px;
+  form{
+    margin: 0 30px;
+  }
+  input:not(.blue-button){
+    border: none;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  input{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.1em;
+  }
+  .blue-button{
+    margin-top: 10px;
+  }
+  h2{
+    text-align: center;
+    font-family: Intro-Bold,Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+.signin{
+  width: 360px;
+  margin: 0 20px;
+}
+.soc-signin,.desc{
+  border-top: 1px solid #eee;
+  margin-top: 25px;
+}
+.desc{
+  width: 360px;
+  padding: 55px 0;
+  p{
+    margin: 0 25px;
+    font-size: 1.4em;
+    font-family: Intro-Book,Arial, Helvetica, sans-serif;
+    color: $grey9
+  }
+}
+.soc-signin{
+  padding-bottom: 25px;
+  p{
+    font-size: 1.4em;
+    font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+    margin: 15px 0;
+  }
+  .fb{
+    background: url(../img/login-fb.png) no-repeat 50% 50%;
+    border-radius: 100%;
+    border:1px solid $grey;
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    margin: 0 7.5px;
+  }
+  .vk{
+    background: url(../img/login-vk.png) no-repeat 50% 50%;
+    border-radius: 100%;
+    border:1px solid $grey;
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    margin: 0 7.5px;
+  }
+  .ok{
+    background: url(../img/login-ok.png) no-repeat 50% 50%;
+    border-radius: 100%;
+    border:1px solid $grey;
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    margin: 0 7.5px;
+  }
+  .tw{
+    background: url(../img/login-tw.png) no-repeat 50% 50%;
+    border-radius: 100%;
+    border:1px solid $grey;
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    margin: 0 7.5px;
   }
 }
