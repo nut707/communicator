@@ -1,6 +1,7 @@
 $grey: #333333;
 $light-grey: #cccccc;
 $grey9: #999999;
+$f2: #f2f2f2;
 $orange: #eeb044;
 $blue:#0099cc;
 
@@ -33,6 +34,8 @@ $blue:#0099cc;
   src: url(../fonts/RUBSN.otf);
 }
 
+$other: Arial, Helvetica, sans-serif;
+
 
 html *{
   margin: 0;
@@ -49,14 +52,19 @@ a{
   color: $grey;
   text-decoration: none;
 }
+
 .rub{
   font-family: rub, Arial, Helvetica, sans-serif;
+  display: inline-block !important;
+  &:before{
+    content: 'Ы'
+  }
 }
 
 //HEADER
 .headder-wrapper{
   position: relative;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 1px 5px 0px $light-grey;
 }
 header{
   padding: 25px 140px;
@@ -82,13 +90,13 @@ nav{
   display: inline-block;
   width: 235px;
   height: 37px;
-  margin: 0px 70px;
+  margin: 0px 7.75%;
   background: url(/img/header-logo.png) no-repeat 50% 100%;
   vertical-align: middle;
 }
+
 .search-user-cart-block{
   display: inline-block;
-  float: right;
   a{
     display: inline-block;
     vertical-align: middle;
@@ -136,7 +144,7 @@ nav{
 .catalog-dropdown-wrapper{
   display: none;
   position: absolute;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 1px 5px 0px $light-grey;
   z-index: 100;
   background: white;
   width: 100%;
@@ -152,7 +160,7 @@ nav{
     line-height: 350px;
     vertical-align: bottom;
     font-size: 1.1em;
-    box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.11);
+    box-shadow: 5px 0px 5px -3px $light-grey;
     margin-top: -5px;
   }
   .smarts{
@@ -188,7 +196,7 @@ nav{
 .subheader
 {
   padding: 25px 0;
-  .title,.back-button,.back-icon{
+  .title,.back-button,.icon{
     display: inline-block;
     vertical-align: middle;
   }
@@ -202,14 +210,20 @@ nav{
     float: right;
     font-family: Intro-Book,Arial, Helvetica, sans-serif;
   }
-  .back-icon{
+  .icon{
     margin-left: 10px;
     width: 31px;
     height: 31px;
-    background: url(/img/back-icon.png) no-repeat 50% 50%;
     border-radius: 100%;
     border: 1px solid $light-grey;
   }
+  .back{
+    background: url(/img/back-icon.png) no-repeat 50% 50%;
+  }
+  .clear{
+    background: url(/img/cross-grey.png) no-repeat 50% 50%;
+  }
+  
 }
 //breadcrumps
 .breadcrumps{
@@ -235,7 +249,7 @@ nav{
 //FOOTER
 .footer-wrapper{
   position: relative;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 3px 5px 0px $light-grey;
 }
 footer{
   padding-top: 60px;
@@ -336,117 +350,240 @@ footer{
   text-align: center;
   cursor: pointer;
 }
-.catalog-list-login,.signin,.reg{
-  display: inline-block;
-  vertical-align: top;
-  box-shadow: 0 0 5px 0 $light-grey;
-}
-.catalog-list-login{
-  border-radius: 5px;
-  padding: 28px;
-  a{
-    display: block;
-    color: $blue;
-    text-decoration: underline;
-    margin-bottom: 15px;
-    font-size: 1.15em;
-    font-family: OpenSans-Regular,Arial, Helvetica, sans-serif;
+.login{
+  .catalog-list-login,.signin,.reg{
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 0 5px 0 $light-grey;
   }
-  .dark{
-    text-transform: uppercase;
-    color: $grey;
-    text-decoration: none;
-    font-size: 1.3em;
-    font-family: Intro-Regular,Arial, Helvetica, sans-serif;
-  }
-}
-.signin,.reg{
-  text-align: center;
-  border-radius: 5px;
-  padding-top: 20px;
-  form{
-    margin: 0 30px;
-  }
-  input:not(.blue-button){
-    border: none;
-    margin-bottom: 10px;
-    padding: 20px;
+  .catalog-list-login{
     border-radius: 5px;
+    padding: 28px;
+    a{
+      display: block;
+      color: $blue;
+      text-decoration: underline;
+      margin-bottom: 15px;
+      font-size: 1.15em;
+      font-family: OpenSans-Regular,Arial, Helvetica, sans-serif;
+    }
+    .dark{
+      text-transform: uppercase;
+      color: $grey;
+      text-decoration: none;
+      font-size: 1.3em;
+      font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+    }
   }
-  input{
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 1.1em;
-  }
-  .blue-button{
-    margin-top: 10px;
-  }
-  h2{
+  .signin,.reg{
     text-align: center;
-    font-family: Intro-Bold,Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-top: 20px;
+    form{
+      margin: 0 30px;
+    }
+    input:not(.blue-button){
+      border: none;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    input{
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1.1em;
+    }
+    .blue-button{
+      margin-top: 10px;
+    }
+    h2{
+      text-align: center;
+      font-family: Intro-Bold,Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+  }
+  .signin{
+    width: 360px;
+    margin: 0 20px;
+  }
+  .soc-signin,.desc{
+    border-top: 1px solid #eee;
+    margin-top: 25px;
+  }
+  .desc{
+    width: 360px;
+    padding: 55px 0;
+    p{
+      margin: 0 25px;
+      font-size: 1.4em;
+      font-family: Intro-Book,Arial, Helvetica, sans-serif;
+      color: $grey9
+    }
+  }
+  .soc-signin{
+    padding-bottom: 25px;
+    p{
+      font-size: 1.4em;
+      font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+      margin: 15px 0;
+    }
+    .fb{
+      background: url(../img/login-fb.png) no-repeat 50% 50%;
+      border-radius: 100%;
+      border:1px solid $grey;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+      margin: 0 7.5px;
+    }
+    .vk{
+      background: url(../img/login-vk.png) no-repeat 50% 50%;
+      border-radius: 100%;
+      border:1px solid $grey;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+      margin: 0 7.5px;
+    }
+    .ok{
+      background: url(../img/login-ok.png) no-repeat 50% 50%;
+      border-radius: 100%;
+      border:1px solid $grey;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+      margin: 0 7.5px;
+    }
+    .tw{
+      background: url(../img/login-tw.png) no-repeat 50% 50%;
+      border-radius: 100%;
+      border:1px solid $grey;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+      margin: 0 7.5px;
+    }
   }
 }
-.signin{
-  width: 360px;
-  margin: 0 20px;
-}
-.soc-signin,.desc{
-  border-top: 1px solid #eee;
-  margin-top: 25px;
-}
-.desc{
-  width: 360px;
-  padding: 55px 0;
-  p{
-    margin: 0 25px;
-    font-size: 1.4em;
-    font-family: Intro-Book,Arial, Helvetica, sans-serif;
-    color: $grey9
+
+//cart
+.products{
+  form{
+    box-shadow: 0 5px 7px -5px $light-grey;
+    .item-wrapper{
+      box-shadow: 0 0 5px 0px $light-grey;
+      border-radius: 5px;
+      .item{
+        padding: 25px 0;
+      }
+      .item:not(:first-child){
+        border-top: 1px solid #ddd;
+      }
+      .item>*{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      img{
+        padding-left: 30px;
+      }
+      .price,.total-price,.name{
+        font-family: Intro-Regular, $other;
+        .bold{
+          color: $grey;
+          font-size: 1.35em;
+        }
+      }
+      .desc,.price,.total-price
+      {
+        padding: 0 35px;
+      }
+      .quanity{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 75px;
+        background: $f2;
+        border-radius: 5px;
+        text-align: center;
+        font-family: Intro-Bold, $other;
+        font-size: 1.2em;
+        margin: 0 12.75%;
+        *{
+          display: inline-block;
+          line-height: 40px;
+        }
+        .value{
+          background: white;
+          border-radius: 5px;
+          margin: 1px;
+          padding: 0 15px;
+        }
+        .dec,.inc{
+          cursor: pointer;
+        }
+      }      
+    }
+    .small-grey{
+      font-family: OpenSans-Regular, $other;
+      color: $grey9;
+      font-size: 0.9em;
+      padding-bottom: 0;
+    }
+    .total{
+    padding: 45px;
+    &>*{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .update{
+      text-transform: uppercase;
+      background: url(../img/cart-update.png) no-repeat 0% 50%;
+      font-family: Intro-Regular, $other;
+      font-size: 0.9em;
+      padding-left: 35px;
+      min-height: 22px;
+      line-height: 22px;
+    }
+    .blue-button{
+      margin: 0 25%;
+    }
+    .final-price{
+      float: right;
+      .bold{
+        font-family: Intro-Bold, $other;
+        font-size: 1.9em;
+      }
+    }
   }
-}
-.soc-signin{
-  padding-bottom: 25px;
-  p{
-    font-size: 1.4em;
-    font-family: Intro-Regular,Arial, Helvetica, sans-serif;
-    margin: 15px 0;
   }
-  .fb{
-    background: url(../img/login-fb.png) no-repeat 50% 50%;
-    border-radius: 100%;
-    border:1px solid $grey;
-    width: 37px;
-    height: 37px;
-    display: inline-block;
-    margin: 0 7.5px;
-  }
-  .vk{
-    background: url(../img/login-vk.png) no-repeat 50% 50%;
-    border-radius: 100%;
-    border:1px solid $grey;
-    width: 37px;
-    height: 37px;
-    display: inline-block;
-    margin: 0 7.5px;
-  }
-  .ok{
-    background: url(../img/login-ok.png) no-repeat 50% 50%;
-    border-radius: 100%;
-    border:1px solid $grey;
-    width: 37px;
-    height: 37px;
-    display: inline-block;
-    margin: 0 7.5px;
-  }
-  .tw{
-    background: url(../img/login-tw.png) no-repeat 50% 50%;
-    border-radius: 100%;
-    border:1px solid $grey;
-    width: 37px;
-    height: 37px;
-    display: inline-block;
-    margin: 0 7.5px;
+  
+  .reccomend{
+    padding: 70px 0;
+    border-bottom: 1px solid $light-grey;
+    h2{
+      font-family: Intro-Bold, $other;
+      font-size: 1.9em;
+      text-align: center;
+    }
+    .item{
+      margin: 80px 25px 0;
+      display: inline-block;
+      text-align: center;
+      *{
+        display: block;
+      }
+      p{
+        font-family: Intro-Book, Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+      }
+      .price{
+        margin-top: 15px;
+        font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+        font-size: 1.4em;
+      }
+    }
+
   }
 }

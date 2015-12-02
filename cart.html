@@ -3,7 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <title>
-      Главная
+      Корзина
     </title>
     <script src='js/jquery-2.1.4.min.js'></script>
     <script src='js/dropdowns.js'></script>
@@ -30,7 +30,7 @@
             </span>
             <span class='total-price'>
               45000
-              <span class='rub'></span>
+              <div class='rub'></div>
             </span>
           </a>
         </div>
@@ -52,58 +52,131 @@
       <div class='container'>
         <h1 class='title'>Вход/регистрация</h1>
         <a class='back-button' href='#'>
-          Назад
-          <span class='icon back'></span>
+          Очистить корзину
+          <span class='icon clear'></span>
         </a>
       </div>
     </div>
     <div class='breadcrumps container'>
       <a href='/main.html'>Главная</a>
       <div class='triangle-right'></div>
-      <div class='current-page'>Вход/Регистрация</div>
+      <div class='current-page'>Корзина</div>
     </div>
-    <div class='login container'>
-      <div class='catalog-list-login grey-bg'>
-        <a class='dark' href='/catalog.html'>Каталог</a>
-        <a href='#'>Смартфоны</a>
-        <a href='#'>Планшеты</a>
-        <a href='#'>Аксессуары</a>
-        <a href='#'>Электронные книги</a>
-        <a href='#'>Игры и гаджеты</a>
-        <a href='#'>Чехлы</a>
-      </div>
-      <div class='signin'>
-        <form>
-          <h2>Вход</h2>
-          <input class='grey-bg' placeholder='Телефон'>
-          <br>
-          <input class='grey-bg' placeholder='Пароль' type='password'>
-          <br>
-          <input class='blue-button' type='submit' value='ВОЙТИ'>
-        </form>
-        <div class='soc-signin'>
-          <p>или через соцсети</p>
-          <div class='soc-signin-icons'>
-            <a class='fb' href='#'></a>
-            <a class='vk' href='#'></a>
-            <a class='ok' href='#'></a>
-            <a class='tw' href='#'></a>
+    <div class='products container'>
+      <form>
+        <div class='item-wrapper'>
+          <div class='item'>
+            <img src='img/cart-item.png'>
+            <div class='desc'>
+              <div class='small-grey'>Смартфоны</div>
+              <div class='name'>iPhone 6S Gray 32GB</div>
+            </div>
+            <div class='quanity'>
+              <div class='dec'>-</div>
+              <div class='value'>1</div>
+              <div class='inc'>+</div>
+            </div>
+            <div class='price'>
+              <div class='small-grey'>Единица товара</div>
+              <div class='bold'>
+                59990
+                <div class='rub'></div>
+              </div>
+            </div>
+            <div class='total-price'>
+              <div class='small-grey'>Итоговая цена</div>
+              <div class='bold'>
+                59990
+                <div class='rub'></div>
+              </div>
+            </div>
+            <div class='delete'></div>
+          </div>
+          <div class='item'>
+            <img src='img/cart-item.png'>
+            <div class='desc'>
+              <div class='small-grey'>Смартфоны</div>
+              <div class='name'>iPhone 6S Gray 32GB</div>
+            </div>
+            <div class='quanity'>
+              <div class='dec'>-</div>
+              <div class='value'>2</div>
+              <div class='inc'>+</div>
+            </div>
+            <div class='price'>
+              <div class='small-grey'>Единица товара</div>
+              <div class='bold'>
+                550
+                <div class='rub'></div>
+              </div>
+            </div>
+            <div class='total-price'>
+              <div class='small-grey'>Итоговая цена</div>
+              <div class='bold'>
+                1100
+                <div class='rub'></div>
+              </div>
+            </div>
+            <div class='delete'></div>
           </div>
         </div>
-      </div>
-      <div class='reg'>
-        <form>
-          <h2>Регистрация</h2>
-          <input class='grey-bg' placeholder='Телефон/Email'>
-          <br>
-          <input class='blue-button' type='submit' value='ЗАРЕГИСТРИРОВАТЬСЯ'>
-        </form>
-        <div class='desc'>
+        <div class='total'>
+          <a class='update' href='#'>Пересчитать</a>
+          <input class='blue-button' type='button' value='ОФОРМИТЬ ЗАКАЗ'>
+          <div class='final-price'>
+            <div class='small-grey'>Общая сумма</div>
+            <div class='bold'>
+              61090
+              <div class='rub'></div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class='reccomend'>
+        <h2>РЕКОМЕНДУЕМ</h2>
+        <div class='item'>
+          <img src='img/cart-recom.jpg'>
           <p>
-            Регистрация позволяет вам
-            следить за заказами, получать
-            скидки и бонусы
+            Док-станция iPhone
+            <br>3G/3GS/4 CD112</br>
           </p>
+          <div class='price'>
+            345
+            <div class='rub'></div>
+          </div>
+        </div>
+        <div class='item'>
+          <img src='img/cart-recom.jpg'>
+          <p>
+            Док-станция iPhone
+            <br>3G/3GS/4 CD112</br>
+          </p>
+          <div class='price'>
+            345
+            <div class='rub'></div>
+          </div>
+        </div>
+        <div class='item'>
+          <img src='img/cart-recom.jpg'>
+          <p>
+            Док-станция iPhone
+            <br>3G/3GS/4 CD112</br>
+          </p>
+          <div class='price'>
+            345
+            <div class='rub'></div>
+          </div>
+        </div>
+        <div class='item'>
+          <img src='img/cart-recom.jpg'>
+          <p>
+            Док-станция iPhone
+            <br>3G/3GS/4 CD112</br>
+          </p>
+          <div class='price'>
+            345
+            <div class='rub'></div>
+          </div>
         </div>
       </div>
     </div>

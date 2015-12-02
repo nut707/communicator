@@ -3,7 +3,7 @@
   %head
     %meta{charset:"utf-8"}
     %title
-      Главная
+      Корзина
     %script{src:'js/jquery-2.1.4.min.js'}
     %script{src:'js/dropdowns.js'}
     / %script{src:'jquery-ui-1.11.4.custom/jquery-ui.min.js'}
@@ -26,7 +26,7 @@
               2
             %span.total-price
               45000 
-              %span.rub
+              .rub
     .catalog-dropdown-wrapper
       .catalog-dropdown.container
         %a.smarts{href:'#'} Смартфоны
@@ -37,7 +37,78 @@
         %a.psp{href:'#'} PSP
         %a.headphones{href:'#'} Наушники
         %a.accums{href:'#'} Зарядные устройства
-    .container
+    .subheader.grey-bg
+      .container
+        %h1.title Вход/регистрация
+        %a.back-button{href:'#'} 
+          Очистить корзину
+          %span.icon.clear
+    .breadcrumps.container
+      %a{href:'/main.html'} Главная
+      .triangle-right
+      .current-page Корзина
+    .products.container
+      %form
+        .item-wrapper
+          .item
+            %img{src:'img/cart-item.png'}
+            .desc
+              .small-grey Смартфоны
+              .name iPhone 6S Gray 32GB
+            .quanity
+              .dec -
+              .value 1
+              .inc +
+            .price
+              .small-grey Единица товара
+              .bold
+                59990 
+                .rub
+            .total-price
+              .small-grey Итоговая цена
+              .bold
+                59990 
+                .rub
+            .delete
+          .item
+            %img{src:'img/cart-item.png'}
+            .desc
+              .small-grey Смартфоны
+              .name iPhone 6S Gray 32GB
+            .quanity
+              .dec -
+              .value 2
+              .inc +
+            .price
+              .small-grey Единица товара
+              .bold
+                550 
+                .rub
+            .total-price
+              .small-grey Итоговая цена
+              .bold
+                1100 
+                .rub
+            .delete
+        .total
+          %a.update{href:'#'} Пересчитать
+          %input.blue-button{type:'button', value:'ОФОРМИТЬ ЗАКАЗ'}
+          .final-price
+            .small-grey Общая сумма
+            .bold 
+              61090
+              .rub
+      .reccomend
+        %h2 РЕКОМЕНДУЕМ
+        -(1..4).each do
+          .item
+            %img{src:'img/cart-recom.jpg'}
+            %p 
+              Док-станция iPhone 
+              %br 3G/3GS/4 CD112
+            .price 
+              345
+              .rub
     .footer-wrapper
       %footer.container
         .col-1

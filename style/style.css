@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: OpenSans-Bold;
   src: url(../fonts/OpenSans-Bold.ttf);
@@ -54,11 +55,16 @@ a {
 
 .rub {
   font-family: rub, Arial, Helvetica, sans-serif;
+  display: inline-block !important;
+}
+
+.rub:before {
+  content: 'Ы';
 }
 
 .headder-wrapper {
   position: relative;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 1px 5px 0px #cccccc;
 }
 
 header {
@@ -89,14 +95,13 @@ nav a:last-child {
   display: inline-block;
   width: 235px;
   height: 37px;
-  margin: 0px 70px;
+  margin: 0px 7.75%;
   background: url(/img/header-logo.png) no-repeat 50% 100%;
   vertical-align: middle;
 }
 
 .search-user-cart-block {
   display: inline-block;
-  float: right;
 }
 
 .search-user-cart-block a {
@@ -151,7 +156,7 @@ nav a:last-child {
 .catalog-dropdown-wrapper {
   display: none;
   position: absolute;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 1px 5px 0px #cccccc;
   z-index: 100;
   background: white;
   width: 100%;
@@ -170,7 +175,7 @@ nav a:last-child {
   line-height: 350px;
   vertical-align: bottom;
   font-size: 1.1em;
-  box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.11);
+  box-shadow: 5px 0px 5px -3px #cccccc;
   margin-top: -5px;
 }
 
@@ -214,7 +219,7 @@ nav a:last-child {
   padding: 25px 0;
 }
 
-.subheader .title, .subheader .back-button, .subheader .back-icon {
+.subheader .title, .subheader .back-button, .subheader .icon {
   display: inline-block;
   vertical-align: middle;
 }
@@ -231,13 +236,20 @@ nav a:last-child {
   font-family: Intro-Book,Arial, Helvetica, sans-serif;
 }
 
-.subheader .back-icon {
+.subheader .icon {
   margin-left: 10px;
   width: 31px;
   height: 31px;
-  background: url(/img/back-icon.png) no-repeat 50% 50%;
   border-radius: 100%;
   border: 1px solid #cccccc;
+}
+
+.subheader .back {
+  background: url(/img/back-icon.png) no-repeat 50% 50%;
+}
+
+.subheader .clear {
+  background: url(/img/cross-grey.png) no-repeat 50% 50%;
 }
 
 .breadcrumps {
@@ -267,7 +279,7 @@ nav a:last-child {
 
 .footer-wrapper {
   position: relative;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 3px 5px 0px #cccccc;
 }
 
 footer {
@@ -381,18 +393,18 @@ footer .button-map {
   cursor: pointer;
 }
 
-.catalog-list-login, .signin, .reg {
+.login .catalog-list-login, .login .signin, .login .reg {
   display: inline-block;
   vertical-align: top;
   box-shadow: 0 0 5px 0 #cccccc;
 }
 
-.catalog-list-login {
+.login .catalog-list-login {
   border-radius: 5px;
   padding: 28px;
 }
 
-.catalog-list-login a {
+.login .catalog-list-login a {
   display: block;
   color: #0099cc;
   text-decoration: underline;
@@ -401,7 +413,7 @@ footer .button-map {
   font-family: OpenSans-Regular,Arial, Helvetica, sans-serif;
 }
 
-.catalog-list-login .dark {
+.login .catalog-list-login .dark {
   text-transform: uppercase;
   color: #333333;
   text-decoration: none;
@@ -409,73 +421,73 @@ footer .button-map {
   font-family: Intro-Regular,Arial, Helvetica, sans-serif;
 }
 
-.signin, .reg {
+.login .signin, .login .reg {
   text-align: center;
   border-radius: 5px;
   padding-top: 20px;
 }
 
-.signin form, .reg form {
+.login .signin form, .login .reg form {
   margin: 0 30px;
 }
 
-.signin input:not(.blue-button), .reg input:not(.blue-button) {
+.login .signin input:not(.blue-button), .login .reg input:not(.blue-button) {
   border: none;
   margin-bottom: 10px;
   padding: 20px;
   border-radius: 5px;
 }
 
-.signin input, .reg input {
+.login .signin input, .login .reg input {
   width: 100%;
   box-sizing: border-box;
   font-size: 1.1em;
 }
 
-.signin .blue-button, .reg .blue-button {
+.login .signin .blue-button, .login .reg .blue-button {
   margin-top: 10px;
 }
 
-.signin h2, .reg h2 {
+.login .signin h2, .login .reg h2 {
   text-align: center;
   font-family: Intro-Bold,Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.signin {
+.login .signin {
   width: 360px;
   margin: 0 20px;
 }
 
-.soc-signin, .desc {
+.login .soc-signin, .login .desc {
   border-top: 1px solid #eee;
   margin-top: 25px;
 }
 
-.desc {
+.login .desc {
   width: 360px;
   padding: 55px 0;
 }
 
-.desc p {
+.login .desc p {
   margin: 0 25px;
   font-size: 1.4em;
   font-family: Intro-Book,Arial, Helvetica, sans-serif;
   color: #999999;
 }
 
-.soc-signin {
+.login .soc-signin {
   padding-bottom: 25px;
 }
 
-.soc-signin p {
+.login .soc-signin p {
   font-size: 1.4em;
   font-family: Intro-Regular,Arial, Helvetica, sans-serif;
   margin: 15px 0;
 }
 
-.soc-signin .fb {
+.login .soc-signin .fb {
   background: url(../img/login-fb.png) no-repeat 50% 50%;
   border-radius: 100%;
   border: 1px solid #333333;
@@ -485,7 +497,7 @@ footer .button-map {
   margin: 0 7.5px;
 }
 
-.soc-signin .vk {
+.login .soc-signin .vk {
   background: url(../img/login-vk.png) no-repeat 50% 50%;
   border-radius: 100%;
   border: 1px solid #333333;
@@ -495,7 +507,7 @@ footer .button-map {
   margin: 0 7.5px;
 }
 
-.soc-signin .ok {
+.login .soc-signin .ok {
   background: url(../img/login-ok.png) no-repeat 50% 50%;
   border-radius: 100%;
   border: 1px solid #333333;
@@ -505,7 +517,7 @@ footer .button-map {
   margin: 0 7.5px;
 }
 
-.soc-signin .tw {
+.login .soc-signin .tw {
   background: url(../img/login-tw.png) no-repeat 50% 50%;
   border-radius: 100%;
   border: 1px solid #333333;
@@ -513,4 +525,145 @@ footer .button-map {
   height: 37px;
   display: inline-block;
   margin: 0 7.5px;
+}
+
+.products form {
+  box-shadow: 0 5px 7px -5px #cccccc;
+}
+
+.products form .item-wrapper {
+  box-shadow: 0 0 5px 0px #cccccc;
+  border-radius: 5px;
+}
+
+.products form .item-wrapper .item {
+  padding: 25px 0;
+}
+
+.products form .item-wrapper .item:not(:first-child) {
+  border-top: 1px solid #ddd;
+}
+
+.products form .item-wrapper .item > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.products form .item-wrapper img {
+  padding-left: 30px;
+}
+
+.products form .item-wrapper .price, .products form .item-wrapper .total-price, .products form .item-wrapper .name {
+  font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+}
+
+.products form .item-wrapper .price .bold, .products form .item-wrapper .total-price .bold, .products form .item-wrapper .name .bold {
+  color: #333333;
+  font-size: 1.35em;
+}
+
+.products form .item-wrapper .desc, .products form .item-wrapper .price, .products form .item-wrapper
+.total-price {
+  padding: 0 35px;
+}
+
+.products form .item-wrapper .quanity {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 75px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  margin: 0 12.75%;
+}
+
+.products form .item-wrapper .quanity * {
+  display: inline-block;
+  line-height: 40px;
+}
+
+.products form .item-wrapper .quanity .value {
+  background: white;
+  border-radius: 5px;
+  margin: 1px;
+  padding: 0 15px;
+}
+
+.products form .item-wrapper .quanity .dec, .products form .item-wrapper .quanity .inc {
+  cursor: pointer;
+}
+
+.products form .small-grey {
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+  color: #999999;
+  font-size: 0.9em;
+  padding-bottom: 0;
+}
+
+.products form .total {
+  padding: 45px;
+}
+
+.products form .total > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.products form .total .update {
+  text-transform: uppercase;
+  background: url(../img/cart-update.png) no-repeat 0% 50%;
+  font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  padding-left: 35px;
+  min-height: 22px;
+  line-height: 22px;
+}
+
+.products form .total .blue-button {
+  margin: 0 25%;
+}
+
+.products form .total .final-price {
+  float: right;
+}
+
+.products form .total .final-price .bold {
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 1.9em;
+}
+
+.products .reccomend {
+  padding: 70px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.products .reccomend h2 {
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 1.9em;
+  text-align: center;
+}
+
+.products .reccomend .item {
+  margin: 80px 25px 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.products .reccomend .item * {
+  display: block;
+}
+
+.products .reccomend .item p {
+  font-family: Intro-Book, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.products .reccomend .item .price {
+  margin-top: 15px;
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
 }
