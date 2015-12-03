@@ -5,6 +5,14 @@ $(document).ready(function($) {
     $('.catalog-dropdown-wrapper').slideToggle()
   });
 
-  $('video').click(function(){this.paused?this.play():this.pause();});
+  $('video').click(function(){
+    if (this.paused){
+      this.play();
+      $(this).attr('controls','');
+    }
+    else{
+      this.pause();
+    }
+  });
 
 });

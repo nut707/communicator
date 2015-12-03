@@ -475,6 +475,7 @@ footer .button-map {
 
 video {
   width: 100%;
+  position: relative;
 }
 
 .login .signin, .login .reg {
@@ -768,6 +769,10 @@ video {
   font-family: Intro-Book, Arial, Helvetica, sans-serif;
   font-size: 26px;
   margin-top: 50px;
+}
+
+.content video {
+  margin: 40px 0;
 }
 
 .content .quote {
