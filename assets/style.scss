@@ -420,6 +420,9 @@ footer{
 .grey-bot{
   border-bottom: 2px solid $f2;
 }
+video{
+  width: 100%;
+}
 @import 'login';
 @import 'cart';
 @import 'content';

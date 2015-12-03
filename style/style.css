@@ -473,6 +473,10 @@ footer .button-map {
   border-bottom: 2px solid #f2f2f2;
 }
 
+video {
+  width: 100%;
+}
+
 .login .signin, .login .reg {
   display: inline-block;
   vertical-align: top;
