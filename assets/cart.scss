@@ -1,0 +1,119 @@
+.products{
+  form{
+    box-shadow: 0 5px 7px -5px $light-grey;
+    .item-wrapper{
+      box-shadow: 0 0 5px 0px $light-grey;
+      border-radius: 5px;
+      .item{
+        padding: 25px 0;
+      }
+      .item:not(:first-child){
+        border-top: 1px solid #ddd;
+      }
+      .item>*{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      img{
+        padding-left: 30px;
+      }
+      .price,.total-price,.name{
+        font-family: Intro-Regular, $other;
+        .bold{
+          color: $grey;
+          font-size: 1.35em;
+        }
+      }
+      .desc,.price,.total-price
+      {
+        padding: 0 35px;
+      }
+      .quanity{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 75px;
+        background: $f2;
+        border-radius: 5px;
+        text-align: center;
+        font-family: Intro-Bold, $other;
+        font-size: 1.2em;
+        margin: 0 12.75%;
+        *{
+          display: inline-block;
+          line-height: 40px;
+        }
+        .value{
+          background: white;
+          border-radius: 5px;
+          margin: 1px;
+          padding: 0 15px;
+        }
+        .dec,.inc{
+          cursor: pointer;
+        }
+      }      
+    }
+    .small-grey{
+      font-family: OpenSans-Regular, $other;
+      color: $grey9;
+      font-size: 0.9em;
+      padding-bottom: 0;
+    }
+    .total{
+    padding: 45px;
+    &>*{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .update{
+      text-transform: uppercase;
+      background: url(../img/cart-update.png) no-repeat 0% 50%;
+      font-family: Intro-Regular, $other;
+      font-size: 0.9em;
+      padding-left: 35px;
+      min-height: 22px;
+      line-height: 22px;
+    }
+    .blue-button{
+      margin: 0 25%;
+    }
+    .final-price{
+      float: right;
+      .bold{
+        font-family: Intro-Bold, $other;
+        font-size: 1.9em;
+      }
+    }
+  }
+  }
+  
+  .reccomend{
+    padding: 70px 0;
+    border-bottom: 1px solid $light-grey;
+    h2{
+      font-family: Intro-Bold, $other;
+      font-size: 1.9em;
+      text-align: center;
+    }
+    .item{
+      margin: 80px 25px 0;
+      display: inline-block;
+      text-align: center;
+      *{
+        display: block;
+      }
+      p{
+        font-family: Intro-Book, Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+      }
+      .price{
+        margin-top: 15px;
+        font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+        font-size: 1.4em;
+      }
+    }
+
+  }
+}

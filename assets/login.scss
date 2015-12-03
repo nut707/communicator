@@ -1,0 +1,98 @@
+.login{
+  .signin,.reg{
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 0 5px 0 $light-grey;
+  }
+  
+  .signin,.reg{
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 20px;
+    form{
+      margin: 0 30px;
+    }
+    input:not(.blue-button){
+      border: none;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    input{
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1.1em;
+    }
+    .blue-button{
+      margin-top: 10px;
+    }
+    h2{
+      text-align: center;
+      font-family: Intro-Bold,Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+  }
+  .signin{
+    width: 360px;
+    margin: 0 20px;
+  }
+  .soc-signin,.desc{
+    border-top: 1px solid #eee;
+    margin-top: 25px;
+  }
+  .desc{
+    width: 360px;
+    padding: 55px 0;
+    p{
+      margin: 0 25px;
+      font-size: 1.4em;
+      font-family: Intro-Book,Arial, Helvetica, sans-serif;
+      color: $grey9
+    }
+  }
+  .soc-signin{
+    padding-bottom: 25px;
+    p{
+      font-size: 1.4em;
+      font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+      margin: 15px 0;
+    }
+    .fb{
+      background: url(../img/login-fb.png) no-repeat 50% 50%;
+      border-radius: 100%;
+      border:1px solid $grey;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+      margin: 0 7.5px;
+    }
+    .vk{
+      background: url(../img/login-vk.png) no-repeat 50% 50%;
+      border-radius: 100%;
+      border:1px solid $grey;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+      margin: 0 7.5px;
+    }
+    .ok{
+      background: url(../img/login-ok.png) no-repeat 50% 50%;
+      border-radius: 100%;
+      border:1px solid $grey;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+      margin: 0 7.5px;
+    }
+    .tw{
+      background: url(../img/login-tw.png) no-repeat 50% 50%;
+      border-radius: 100%;
+      border:1px solid $grey;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+      margin: 0 7.5px;
+    }
+  }
+}

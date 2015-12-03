@@ -1,0 +1,65 @@
+.content{
+  display: inline-block;
+  width: 62%;
+  margin-left: 70px;
+  h2{
+    font-family: Intro-Book, Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-bottom: 30px;
+    &+p{
+      font-family: Intro-Book, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+  }
+  &>img{
+    margin: 40px 0;
+  }
+  p{
+    font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    a{
+      color: $blue;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  h3{
+    font-family: Intro-Book, Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-top:50px;
+  }
+  .quote{
+    text-align: center;
+    border-top: 2px solid $f2;
+    border-bottom: 2px solid $f2;
+    position: relative;
+    margin: 75px 0 60px;
+    .author{
+      background: white;
+      position: relative;
+      top: -15px;
+      width: 200px;
+      margin: auto;
+      .name{
+        font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+      .company{
+        font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: $light-grey;
+      }
+    }
+    p{
+      font-family: OpenSans-Italic, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      margin-bottom: 45px;
+    }
+  }
+  .social2{
+    margin-top: 45px;
+    margin-bottom: 90px;
+  }
+}

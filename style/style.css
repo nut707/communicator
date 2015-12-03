@@ -10,6 +10,11 @@
 }
 
 @font-face {
+  font-family: OpenSans-Italic;
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
   font-family: Intro-Regular;
   src: url(../fonts/Intro-Regular.ttf);
 }
@@ -216,7 +221,7 @@ nav a:last-child {
 }
 
 .subheader {
-  padding: 25px 0;
+  padding: 20px 0;
 }
 
 .subheader .title, .subheader .back-button, .subheader .icon {
@@ -250,6 +255,12 @@ nav a:last-child {
 
 .subheader .clear {
   background: url(/img/cross-grey.png) no-repeat 50% 50%;
+}
+
+.subheader .social2 {
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
 }
 
 .breadcrumps {
@@ -393,18 +404,15 @@ footer .button-map {
   cursor: pointer;
 }
 
-.login .catalog-list-login, .login .signin, .login .reg {
+.catalog-side-menu {
   display: inline-block;
   vertical-align: top;
   box-shadow: 0 0 5px 0 #cccccc;
-}
-
-.login .catalog-list-login {
   border-radius: 5px;
   padding: 28px;
 }
 
-.login .catalog-list-login a {
+.catalog-side-menu a {
   display: block;
   color: #0099cc;
   text-decoration: underline;
@@ -413,12 +421,62 @@ footer .button-map {
   font-family: OpenSans-Regular,Arial, Helvetica, sans-serif;
 }
 
-.login .catalog-list-login .dark {
+.catalog-side-menu .dark {
   text-transform: uppercase;
   color: #333333;
   text-decoration: none;
   font-size: 1.3em;
   font-family: Intro-Regular,Arial, Helvetica, sans-serif;
+}
+
+.social2 {
+  font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #cccccc;
+}
+
+.social2 a {
+  display: inline-block;
+  box-sizing: border-box;
+  color: white;
+  padding: 5px 7px 5px 40px;
+  border-radius: 50px;
+  font-size: 11px;
+  width: 66px;
+  height: 23px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.social2 .tw {
+  background-color: #4fc9f1;
+  background-image: url(/img/soc2-tw.png), url(/img/soc2-arrow.png);
+  background-position: 10px 50%, 50% 50%;
+  background-repeat: no-repeat,no-repeat;
+}
+
+.social2 .fb {
+  background-color: #075dde;
+  background-image: url(/img/soc2-fb.png), url(/img/soc2-arrow.png);
+  background-position: 14px 50%, 50% 50%;
+  background-repeat: no-repeat,no-repeat;
+}
+
+.social2 .vk {
+  background-color: #1576b3;
+  background-image: url(/img/soc2-vk.png), url(/img/soc2-arrow.png);
+  background-position: 14px 50%, 50% 50%;
+  background-repeat: no-repeat,no-repeat;
+}
+
+.grey-bot {
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.login .signin, .login .reg {
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 0 5px 0 #cccccc;
 }
 
 .login .signin, .login .reg {
@@ -666,4 +724,82 @@ footer .button-map {
   margin-top: 15px;
   font-family: Intro-Bold, Arial, Helvetica, sans-serif;
   font-size: 1.4em;
+}
+
+.content {
+  display: inline-block;
+  width: 62%;
+  margin-left: 70px;
+}
+
+.content h2 {
+  font-family: Intro-Book, Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.content h2 + p {
+  font-family: Intro-Book, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.content > img {
+  margin: 40px 0;
+}
+
+.content p {
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.content p a {
+  color: #0099cc;
+}
+
+.content p a:hover {
+  text-decoration: underline;
+}
+
+.content h3 {
+  font-family: Intro-Book, Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.content .quote {
+  text-align: center;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  position: relative;
+  margin: 75px 0 60px;
+}
+
+.content .quote .author {
+  background: white;
+  position: relative;
+  top: -15px;
+  width: 200px;
+  margin: auto;
+}
+
+.content .quote .author .name {
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.content .quote .author .company {
+  font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #cccccc;
+}
+
+.content .quote p {
+  font-family: OpenSans-Italic, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.content .social2 {
+  margin-top: 45px;
+  margin-bottom: 90px;
 }
