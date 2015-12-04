@@ -72,7 +72,7 @@ a{
   box-shadow: 0px 1px 5px 0px $light-grey;
 }
 header{
-  padding: 25px 140px;
+  padding: 25px 0;
 }
 nav{
   display: inline-block;
@@ -95,13 +95,14 @@ nav{
   display: inline-block;
   width: 235px;
   height: 37px;
-  margin: 0px 7.75%;
+  margin: 0 0 0 7.75%;
   background: url(/img/header-logo.png) no-repeat 50% 100%;
   vertical-align: middle;
 }
 
 .search-user-cart-block{
   display: inline-block;
+  float: right;
   a{
     display: inline-block;
     vertical-align: middle;
@@ -437,3 +438,4 @@ video{
 @import 'cart';
 @import 'content';
 @import 'cabinet';
+@import 'product';

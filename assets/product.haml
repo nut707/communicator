@@ -1,0 +1,140 @@
+!!!
+%html
+  %head
+    %meta{charset:"utf-8"}
+    %title
+      Apple iPhone 6, space gray
+    %script{src:'js/jquery-2.1.4.min.js'}
+    %script{src:'js/script.js'}
+    
+    %link{rel:'stylesheet',href:'style/style.css'}
+  %body
+    .headder-wrapper
+      %header.container
+        %nav
+          %a{href:'/main.html'} Главная
+          %a#catalog-dropdown Каталог
+          %a{href:'#'} Скидки
+          %a{href:'#'} Магазины
+        %a.logo{href:'/main.html'}
+        .search-user-cart-block
+          %a.search{href:'#'}
+          %a.user{href:'#'}
+          %a.cart{href:'/cart.html'}
+            %span.amount 
+              2
+            %span.total-price
+              45000 
+              .rub
+    .catalog-dropdown-wrapper
+      .catalog-dropdown.container
+        %a.smarts{href:'#'} Смартфоны
+        %a.tablets{href:'#'} Планшеты
+        %a.accses{href:'#'} Аксессуары
+        %a.ebooks{href:'#'} Электронные книги
+        %a.cases{href:'#'} Чехлы
+        %a.psp{href:'#'} PSP
+        %a.headphones{href:'#'} Наушники
+        %a.accums{href:'#'} Зарядные устройства
+    .subheader.grey-bg
+      .container
+        %h1.title Apple iPhone 6, space gray
+        %a.back-button{href:'#'} 
+          Назад
+          %span.icon.back
+    .breadcrumps.container
+      %a{href:'/main.html'} Главная
+      .triangle-right
+      %a{href:'#'} Смартфоны
+      .triangle-right
+      .current-page Apple iPhone 6, space gray
+    .product.container
+      .main-info
+        .row
+          .price
+            .bold
+              49 990
+              .rub
+            .small-grey
+              Артикул 122933
+          .cart-button.blue-button
+            в корзину
+        .row
+          .title Цвет
+          %ul.color-pick
+            %li.color-1.active
+            %li.color-2
+            %li.color-3
+        .row
+          .title память
+          %ul.pick
+            %li.active 16
+            %li 32
+            %li 64
+            %li 128
+        .row
+          .title размер экрана
+          %ul.pick
+            %li 4.4
+            %li.active 5.5
+      .share Поделиться
+      .social2 
+        %a.tw{href:'#'} 13
+        %a.fb{href:'#'} 435
+        %a.vk{href:'#'} 666
+
+      .reccomend
+        %h2 РЕКОМЕНДУЕМ
+        -(1..4).each do
+          .item
+            %img{src:'img/cart-recom.jpg'}
+            %p 
+              Док-станция iPhone 
+              %br 3G/3GS/4 CD112
+            .price 
+              345
+              .rub
+    .footer-wrapper
+      %footer.container
+        .col-1
+          %p
+            © Коммуникатор, 2015 г.
+          %p
+            Все права защищены.
+          %p.dark
+            разработка сайта
+          %img{src: '/img/footer-logo.png'}
+        .col-2
+          %a.bold{href:'/catalog.html'} Каталог
+          %a{href:'#'} Смартфоны 
+          %a{href:'#'} Планшеты 
+          %a{href:'#'} Аксессуары 
+          %a{href:'#'} Электронные книги 
+          %a{href:'#'} Чехлы
+          %a{href:'#'} Наушники
+          %a{href:'#'} PSP
+          %a{href:'#'} Зарядные устройства
+        .col-3
+          %a.bold{href:'#'} О компании
+          %a{href:'#'} Почему мы
+          %a{href:'#'} Оплата 
+          %a{href:'#'} Достака
+          %a{href:'#'} Скидки
+          %a{href:'#'} Магазины
+        .col-4
+          %p.bold
+            8 (800) 29 19 099 
+          %p
+            Россия, г. Владивосток,
+          %p
+            ул. Пограничная 12, офис 34
+          %a.button-map{href:'#'}
+            Карта проезда
+    .social
+      .social-wrapper
+        %a.fb{href:'#'}
+          facebook
+        %a.vk{href:'#'}
+          вконтакте
+        %a.inst{href:'#'}
+          Instagram

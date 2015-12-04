@@ -1,0 +1,85 @@
+.product{
+  .main-info{
+    max-width: 340px;
+    box-shadow: 0 0 5px 0 $light-grey;
+    &>div{
+      padding: 20px;
+    }
+    &>div:not(:first-child){
+      border-top: 1px solid $f2;
+    }
+    .bold{
+      font-size: 24px;
+      font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+    }
+    .row>div{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .cart-button{
+      font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      background: #0099cc;
+      background-image: url(../img/product-cart.png); 
+      background-repeat:no-repeat; 
+      background-position: 20px 50%;
+      padding-left: 50px;
+      float: right;
+    }
+    .title{
+      font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .color-pick{
+      float: right;
+      &>li{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .active{
+        box-shadow: inset 0 0 0 3px $blue;
+      }
+      .color-1{
+        background: #b1b2b7;
+      }
+      .color-2{
+        background: #e1e1e1;
+      }
+      .color-3{
+        background: #f4dca8;
+      }
+    }
+    .row ul{
+      list-style-type: none;
+      display: inline-block;
+      vertical-align: middle;
+      float: right;
+      li{
+        display: inline-block;
+        cursor: pointer;
+        font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: $grey9;
+        margin-right: 10px;
+      }
+      .active{
+        color: $blue;
+      }
+    }
+  }
+  .share{
+    font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: $grey;
+    text-transform: uppercase;
+    margin: 60px 0 15px;
+  }
+  .social2 a:first-child{
+    margin-left: 0px;
+  }
+}
