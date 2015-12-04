@@ -473,9 +473,20 @@ footer .button-map {
   border-bottom: 2px solid #f2f2f2;
 }
 
+.grey-bot-shadow {
+  box-shadow: 0 5px 5px -4px #cccccc;
+}
+
 video {
   width: 100%;
   position: relative;
+}
+
+.small-grey {
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+  color: #999999;
+  font-size: 0.9em;
+  padding-bottom: 0;
 }
 
 .login .signin, .login .reg {
@@ -660,13 +671,6 @@ video {
   cursor: pointer;
 }
 
-.products form .small-grey {
-  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
-  color: #999999;
-  font-size: 0.9em;
-  padding-bottom: 0;
-}
-
 .products form .total {
   padding: 45px;
 }
@@ -811,4 +815,73 @@ video {
 .content .social2 {
   margin-top: 45px;
   margin-bottom: 90px;
+}
+
+.cabinet {
+  padding-bottom: 50px;
+}
+
+.cabinet .order-list {
+  display: inline-block;
+  width: 74%;
+  margin-left: 20px;
+}
+
+.cabinet .order-list .order {
+  box-shadow: 0 0 5px 0 #cccccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 20px 0;
+}
+
+.cabinet .order-list .order > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 45px;
+}
+
+.cabinet .order-list .order .small-grey {
+  margin-bottom: 8px;
+}
+
+.cabinet .order-list .order .number a {
+  text-decoration: underline;
+  color: #0099cc;
+  font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.cabinet .order-list .order .bold {
+  font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #333333;
+}
+
+.cabinet .order-list .all-orders {
+  color: #333333;
+  font-family: OpenSans-Regular,Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: underline;
+  margin-top: 20px;
+  display: block;
+}
+
+.recent {
+  text-align: center;
+}
+
+.recent h2 {
+  color: #333333;
+  font-size: 24px;
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+  margin: 65px auto 85px;
+}
+
+.recent .item {
+  display: inline-block;
+}
+
+.recent .price {
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }

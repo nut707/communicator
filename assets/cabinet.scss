@@ -1,0 +1,59 @@
+.cabinet{
+  padding-bottom: 50px;
+  .order-list{
+    display: inline-block;
+    width: 74%;
+    margin-left:20px; 
+    .order{
+      box-shadow: 0 0 5px 0 $light-grey;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 20px 0;
+      &>div{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 45px;
+      }
+      .small-grey{
+        margin-bottom: 8px;
+      }
+      .number{
+        a{
+          text-decoration: underline;
+          color: $blue;
+          font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+          font-size: 18px;
+        }
+      }
+      .bold{
+        font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: $grey;
+      }
+    }
+    .all-orders{
+      color: $grey;
+      font-family: OpenSans-Regular,Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      text-decoration: underline;
+      margin-top: 20px;
+      display: block;
+    }
+  }
+}
+.recent{
+  text-align: center;
+  h2{
+    color: $grey;
+    font-size: 24px;
+    font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+    margin: 65px auto 85px;
+  }
+  .item{
+    display: inline-block;
+  }
+  .price{
+    font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+}

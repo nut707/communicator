@@ -420,10 +420,20 @@ footer{
 .grey-bot{
   border-bottom: 2px solid $f2;
 }
+.grey-bot-shadow{
+  box-shadow: 0 5px 5px -4px $light-grey;
+}
 video{
   width: 100%;
   position: relative;
 }
+.small-grey{
+  font-family: OpenSans-Regular, $other;
+  color: $grey9;
+  font-size: 0.9em;
+  padding-bottom: 0;
+}
 @import 'login';
 @import 'cart';
 @import 'content';
+@import 'cabinet';
