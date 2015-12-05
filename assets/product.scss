@@ -82,4 +82,69 @@
   .social2 a:first-child{
     margin-left: 0px;
   }
+  .menu{
+    font-family: Intro-Book, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: $grey;
+    margin-top: 90px;
+    padding-bottom: 20px;
+    &>a{
+      display: inline-block;
+      position: relative;
+      padding: 0 16px;
+    }
+    .review-amount{
+      position: absolute;
+      top:-6px;
+      right: 0;
+      color: $grey9;
+      font-size: 12px;
+      font-family: OpenSans-Bold, Arial, Helvetica, sans-serif;
+    }
+    .active{
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+  .desc{
+    padding: 70px 0;
+    .text{
+      display: inline-block;
+      width: 44%;
+    }
+    h2{
+      font-family: Intro-Book, Arial, Helvetica, sans-serif;
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+    p{
+      font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    .media{
+      float: right;
+      display: inline-block;
+      width: 44%;
+      img{
+        height: 290px;
+        width: 49%;
+      }
+    }
+  }
+
+  .reccomend{
+    text-align: center;
+    padding: 80px 0;
+    &>div{
+      display: inline-block;
+      margin: 0 25px;
+    }
+    p{
+      font-family: Intro-Book, Arial, Helvetica, sans-serif;
+    }
+    .price{
+      font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+    }
+  }
 }

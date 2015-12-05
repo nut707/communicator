@@ -987,3 +987,81 @@ video {
 .product .social2 a:first-child {
   margin-left: 0px;
 }
+
+.product .menu {
+  font-family: Intro-Book, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #333333;
+  margin-top: 90px;
+  padding-bottom: 20px;
+}
+
+.product .menu > a {
+  display: inline-block;
+  position: relative;
+  padding: 0 16px;
+}
+
+.product .menu .review-amount {
+  position: absolute;
+  top: -6px;
+  right: 0;
+  color: #999999;
+  font-size: 12px;
+  font-family: OpenSans-Bold, Arial, Helvetica, sans-serif;
+}
+
+.product .menu .active {
+  color: #0099cc;
+  text-decoration: underline;
+}
+
+.product .desc {
+  padding: 70px 0;
+}
+
+.product .desc .text {
+  display: inline-block;
+  width: 44%;
+}
+
+.product .desc h2 {
+  font-family: Intro-Book, Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.product .desc p {
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.product .desc .media {
+  float: right;
+  display: inline-block;
+  width: 44%;
+}
+
+.product .desc .media img {
+  height: 290px;
+  width: 49%;
+}
+
+.product .reccomend {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.product .reccomend > div {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.product .reccomend p {
+  font-family: Intro-Book, Arial, Helvetica, sans-serif;
+}
+
+.product .reccomend .price {
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+}
