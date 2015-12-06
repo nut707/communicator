@@ -818,6 +818,40 @@ video {
   margin-bottom: 90px;
 }
 
+.content .bx-wrapper .bx-prev {
+  left: -70px;
+  background: url(images/controls.png) no-repeat 0 -32px;
+}
+
+.content .bx-wrapper .bx-next {
+  right: -70px;
+  background: url(images/controls.png) no-repeat -43px -32px;
+}
+
+.content .bx-wrapper .bx-pager,
+.content .bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+}
+
+.content .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #999;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.content .bx-wrapper .bx-pager .bx-pager-item, .content .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  vertical-align: middle;
+}
+
+.content .bx-wrapper .bx-pager.bx-default-pager a:hover, .content .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: white;
+}
+
 .cabinet {
   padding-bottom: 50px;
 }

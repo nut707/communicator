@@ -4,9 +4,8 @@
     %meta{charset:"utf-8"}
     %title
       Главная
-    %link{rel:'sylesheet',href:"../slick/slick-theme.css"}
-    %link{rel:'sylesheet',href:"../slick/slick.css"}
     %link{rel:'stylesheet',href:'style/style.css'}
+    %link{rel:'stylesheet',href:'style/bxslider.css'}
 
   %body
     .headder-wrapper
@@ -71,10 +70,13 @@
         %p
           С появлением iPhone мир узнал о технологии Multi-Touch, которая навсегда изменила способ взаимодействия с устройствами. Технология 3D Touch открывает совершенно новые возможности. Она позволяет различать силу нажатия на дисплей, что делает многие функции быстрее и удобнее. Кроме того, телефон реагирует на каждый жест лёгким тактильным откликом благодаря использованию нового привода Taptic Engine.
         %h3 2-мегапиксельные фотографии. Видео 4К. Live Photos. На долгую память.
-        .carousel
-          %img{src:'http://www.publicdomainpictures.net/pictures/40000/nahled/tree-and-storm-2.jpg'}
-          %img{src:'http://www.publicdomainpictures.net/pictures/30000/nahled/sunset-in-harbor.jpg'}
-          %img{src:'http://www.publicdomainpictures.net/pictures/10000/nahled/irish-atlantic-coast-64951288172474n8Bz.jpg'}
+        %ul.bxslider
+          %li
+            %img{src:'http://www.publicdomainpictures.net/pictures/40000/nahled/tree-and-storm-2.jpg'}
+          %li
+            %img{src:'http://www.publicdomainpictures.net/pictures/30000/nahled/sunset-in-harbor.jpg'}
+          %li
+            %img{src:'http://www.publicdomainpictures.net/pictures/10000/nahled/irish-atlantic-coast-64951288172474n8Bz.jpg'}
         %p
           Мы расширили возможности самой популярной в мире камеры. 12-мегапиксельная камера iSight делает чёткие и детальные снимки, а также позволяет снимать потрясающие видео 4K с разрешением почти в четыре раза больше, чем в HD-видео 1080p. А 5-мегапиксельная HD-камера FaceTime позволяет делать отличные селфи. Кроме того, теперь у вас есть возможность снимать Live Photos, на которых буквально оживают самые дорогие воспоминания. Эта функция записывает несколько мгновений до и после съёмки фотографии, что позволяет посмотреть её в движении, сделав одно нажатие.
         .quote
@@ -138,3 +140,4 @@
           Instagram
     %script{src:'js/jquery-2.1.4.min.js'}
     %script{src:'js/script.js'}
+    %script{src:'jquery.bxslider/jquery.bxslider.min.js'}
