@@ -132,8 +132,38 @@
       }
     }
   }
-
-  .reccomend{
+  .chars{
+    .row{
+      padding: 25px 0 25px;
+      border-bottom: 2px solid $f2;
+    }
+    .row>div{
+      display: inline-block;
+      vertical-align: top;      
+    }
+    .title{
+      font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      width: 24%;
+    }
+    .col{
+      width: 74%
+    }
+    .item{
+      width: 27%;
+      display: inline-block;
+      vertical-align: top;
+      font-family: OpenSans-regular, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      padding-bottom: 40px;
+      padding-right: 40px;
+      .sub-title{
+        color: $grey9;
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .acces{
     text-align: center;
     padding: 80px 0;
     &>div{
@@ -145,6 +175,114 @@
     }
     .price{
       font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+    }
+  }
+  .reviews{
+    .item{
+      padding: 45px 125px 45px 125px;
+      min-height: 100px;
+      font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+      border-bottom: 2px solid $f2;
+      .name{
+        font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+      .date{
+        color: $grey9;
+        font-size: 12px;
+      }
+      .body{
+        font-size: 13px;
+        padding-top: 10px;
+      }
+    }
+    .positive{
+      background: url(../img/review-pos.png) no-repeat 5px 50%;
+    }
+    .negative{
+      background: url(../img/review-neg.png) no-repeat 5px 50%;
+    }
+    .neutral{
+      background: url(../img/review-neutr.png) no-repeat 5px 50%;
+    }
+  }
+  .add-review{
+    padding: 60px 0;
+    form{
+      width: 83%;
+      margin: 0 auto;
+      *{
+          &:focus{
+          outline:none;
+        }
+      }
+    }
+    .col-1,.col-2{
+      display: inline-block;
+      vertical-align: bottom;
+      &>*{
+        display: block;
+      }
+    }
+    .col-1{
+      width: 75%;
+    }
+    .col-1 label:first-child{
+      font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+    }
+    .col-1 label{
+      font-family: Intro-Book, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+    #review-body,#review-name{
+      background: #f9f9f9;
+      border:none;
+      border-radius: 5px;
+      box-shadow: inset 0 0 5px 0 $light-grey;
+    }
+    #review-name{
+      height: 35px;
+      width: 100%;
+      padding-left: 10px;
+      margin-top: 10px;
+      box-sizing:border-box;
+    }
+    #review-body{
+      width: 100%;
+      height: 200px;
+      padding: 10px;
+      resize: none;
+      margin: 20px 0;
+      box-sizing:border-box;
+    }
+    .col-2{
+      margin-left: 25px;
+      .radio{
+        margin-bottom: 115%;
+        font-family: Intro-Book, Arial, Helvetica, sans-serif;
+        font-size: 14px
+      }
+      .blue-button{
+        font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        height: 37px;
+        padding: 0 15px;
+      }
+      label{
+        margin-bottom: 15px;
+        display: inline-block;
+      }
+      #review-positive+label{
+        color: #39c678;
+      }
+      #review-negative+label{
+        color: #df3d5f;
+      }
+      #review-neutral+label{
+        color: #8b8b8b;
+      }
     }
   }
 }

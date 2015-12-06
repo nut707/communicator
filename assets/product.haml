@@ -101,8 +101,98 @@
           %img{src:'img/product-img-1.jpg'}
           %img{src:'img/product-img-2.jpg'}
           %video{poster:'img/product-video.jpg',src:'video/content.mp4', width:'580px',height:'220px'}
-
-      .reccomend.grey-bot
+      .chars
+        .row
+          .title Общие параметры
+          .col
+            .item
+              .sub-title Тип
+              Смартфон
+            .item
+              .sub-title Модель
+              Apple iPhone 6
+            .item
+              .sub-title Цвет
+              Space gray
+        .row
+          .title Мобильная связь
+          .col
+            .item
+              .sub-title Поддержка сетей 2G
+              EDGE, GSM 1800, GSM 1900, GSM 850, GSM 900
+            .item
+              .sub-title Поддержка сетей 3G
+              DC-HSDPA, HSPA+, UMTS 1900, UMTS 2100, UMTS 850, UMTS 900, WCDMA 1700, WCDMA 1900, WCDMA 2100, WCDMA 800
+            .item
+              .sub-title Поддержка сетей 4G
+              LTE
+            .item
+              .sub-title Формат SIM-карт
+              Nano-SIM (12,3x8,8x0,67 мм)
+            .item
+              .sub-title Поддержка двух SIM карт
+              Нет
+            .item
+              .sub-title Поддержка трех SIM-карт
+              Нет
+        .row
+          .title Экран
+          .col
+            .item
+              .sub-title Вид сенсорного экрана
+              емкостный
+            .item
+              .sub-title Диагональ экрана
+              4,7”
+            .item
+              .sub-title Разрешение экрана
+              1334x750
+            .item
+              .sub-title Технология изготовления экрана
+              IPS
+            .item
+              .sub-title Количество цветов экрана
+              16.77 млн
+            .item
+              .sub-title Защитное покрытие экрана
+              есть
+        .row
+          .title Система
+          .col
+            .item
+              .sub-title Операционная система
+              iOS
+            .item
+              .sub-title Модель процессора
+              Apple A8
+            .item
+              .sub-title Количество ядер
+              2
+            .item
+              .sub-title Частота работы процессора
+              1400 МГц
+            .item
+              .sub-title Графический ускоритель
+              PowerVR GX6650
+            .item
+              .sub-title Объем оперативной памяти
+              1024 Мб
+            .item
+              .sub-title Объем встроенной памяти
+              16 Gb
+            .item
+              .sub-title Слот для карты памяти
+              Нет
+            .item
+              .sub-title Датчики
+              G-сенсор (гироскоп), барометр, датчик отпечатков пальцев, компас, освещенности
+            .item
+              .sub-title Особенности аппаратной составляющей
+              64-разрядная архитектура, сопроцессор движения M8
+            .item
+              .sub-title FM радио
+              Нет
+      .acces.grey-bot
         -(1..4).each do
           .item
             %img{src:'img/cart-recom.jpg'}
@@ -112,6 +202,49 @@
             .price 
               345
               .rub
+      .reviews
+        .item.positive
+          .name Гриорий
+          .date 22 декабря 2014 г. 00:15
+          .body
+            Купил 6 на 128, цена была уже 53 тыс. Не жалею ни сколечко. Аппарат бомба, из друзей многие ярые борцы за андроид попробовав пересели на яблоко наглухо и всем членам своих семей понабрали. . . Хаят те кто не имел.
+        .item.negative
+          .name Mama Luba
+          .date 22 декабря 2014 г. 00:15
+          .body            
+            Други! 
+            Трижды подумайте перед покупкой!
+            В магазине тел выдают в заводской упаковке. На проверке не настаивал, а зря. Хотя...
+            Итак.
+            Дома сразу обнаружился брак - люфт стекла. Глазом не видно, а тактильно очень заметно, так что даже при проверке в магазине мог бы и не заметить.
+            Отнес в сервис. Замена по гарантии. Через 2 недели пришел новый тел на замену - и опять брак (!).
+            Жду уже третью неделю.
+            Юзаю технику от Apple уже давно, и такой лажи от Купертино ну никак не ожидал...
+            Видимо, в дальнейшем придется присматриваться к новомодным навороченным китайцам..
+        .item.neutral
+          .name Прохожий
+          .date 22 декабря 2014 г. 00:15
+          .body
+            Ничего против эйпл не имею, но для прикола ради сравните айфон 6 с сасунгом с3 
+            проц такой же, камера такая же, только фронталка у самунга лучше, оперативка у самсунга тоже в плюсе.
+      .add-review.grey-bot
+        %form
+          .col-1
+            %label Добавить отзыв
+            %textarea#review-body{type:'text'}
+            %label Ваше имя
+            %input#review-name
+          .col-2
+            .radio
+              %input#review-positive{type:'radio',name:'review'}
+              %label{for:'review-positive'}Положительный
+              %br
+              %input#review-negative{type:'radio',name:'review'}
+              %label{for:'review-negative'}Отрицательный
+              %br
+              %input#review-neutral{type:'radio',name:'review'}
+              %label{for:'review-neutral'}Нейтральный
+            %input.blue-button{type:'submit',value: 'Добавить'}
     .footer-wrapper
       %footer.container
         .col-1
