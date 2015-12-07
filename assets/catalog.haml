@@ -1,0 +1,108 @@
+!!!
+%html
+  %head
+    %meta{charset:"utf-8"}
+    %title
+      Смартфоны
+    %script{src:'js/jquery-2.1.4.min.js'}
+    %script{src:'js/script.js'}
+    
+    %link{rel:'stylesheet',href:'style/style.css'}
+  %body
+    .headder-wrapper
+      %header.container
+        %nav
+          %a{href:'/main.html'} Главная
+          %a#catalog-dropdown Каталог
+          %a{href:'#'} Скидки
+          %a{href:'#'} Магазины
+        %a.logo{href:'/main.html'}
+        .search-user-cart-block
+          %a.search{href:'#'}
+          %a.user{href:'#'}
+          %a.cart{href:'/cart.html'}
+            %span.amount 
+              2
+            %span.total-price
+              45000 
+              .rub
+    .catalog-dropdown-wrapper
+      .catalog-dropdown.container
+        %a.smarts{href:'#'} Смартфоны
+        %a.tablets{href:'#'} Планшеты
+        %a.accses{href:'#'} Аксессуары
+        %a.ebooks{href:'#'} Электронные книги
+        %a.cases{href:'#'} Чехлы
+        %a.psp{href:'#'} PSP
+        %a.headphones{href:'#'} Наушники
+        %a.accums{href:'#'} Зарядные устройства
+    .subheader.grey-bg
+      .container
+        %h1.title Cмартфоны
+        .sort
+          %p Сортировать по:
+          .sort-dropdown-wrapper
+            .sort-button
+              .text Возрастанию цены 
+              .triangle-down
+            .sort-dropdown
+              .active
+                Возрастанию цены
+              %div
+                Убыванию цены
+              %div
+                Популярности
+              %div
+                Новинкам
+        .search-amount
+          Найдено 425 товаров
+    .breadcrumps.container
+      %a{href:'/main.html'} Каталог
+      .triangle-right
+      .current-page Смартфоны
+    .catalog.container
+      .filter
+    .footer-wrapper
+      %footer.container
+        .col-1
+          %p
+            © Коммуникатор, 2015 г.
+          %p
+            Все права защищены.
+          %p.dark
+            разработка сайта
+          %img{src: '/img/footer-logo.png'}
+        .col-2
+          %a.bold{href:'/catalog.html'} Каталог
+          %a{href:'#'} Смартфоны 
+          %a{href:'#'} Планшеты 
+          %a{href:'#'} Аксессуары 
+          %a{href:'#'} Электронные книги 
+          %a{href:'#'} Чехлы
+          %a{href:'#'} Наушники
+          %a{href:'#'} PSP
+          %a{href:'#'} Зарядные устройства
+        .col-3
+          %a.bold{href:'#'} О компании
+          %a{href:'#'} Почему мы
+          %a{href:'#'} Оплата 
+          %a{href:'#'} Достака
+          %a{href:'#'} Скидки
+          %a{href:'#'} Магазины
+        .col-4
+          %p.bold
+            8 (800) 29 19 099 
+          %p
+            Россия, г. Владивосток,
+          %p
+            ул. Пограничная 12, офис 34
+          %a.button-map{href:'#'}
+            Карта проезда
+    .social
+      .social-wrapper
+        %a.fb{href:'#'}
+          facebook
+        %a.vk{href:'#'}
+          вконтакте
+        %a.inst{href:'#'}
+          Instagram

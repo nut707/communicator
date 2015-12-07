@@ -819,12 +819,12 @@ video {
 }
 
 .content .bx-wrapper .bx-prev {
-  left: -70px;
+  left: -50px;
   background: url(images/controls.png) no-repeat 0 -32px;
 }
 
 .content .bx-wrapper .bx-next {
-  right: -70px;
+  right: -50px;
   background: url(images/controls.png) no-repeat -43px -32px;
 }
 
@@ -1262,4 +1262,92 @@ video {
 
 .product .add-review .col-2 #review-neutral + label {
   color: #8b8b8b;
+}
+
+.search-amount, .sort {
+  display: inline-block;
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  vertical-align: middle;
+  float: right;
+}
+
+.search-amount {
+  color: #999999;
+  padding-right: 20px;
+  border-right: 1px solid #cccccc;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.sort * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sort p {
+  font-family: OpenSans-Bold, Arial, Helvetica, sans-serif;
+}
+
+.sort-dropdown-wrapper {
+  width: 150px;
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+}
+
+.sort-button, .sort-dropdown {
+  clear: both;
+}
+
+.sort-button {
+  position: relative;
+  cursor: pointer;
+  background: white;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 0 #999999;
+  padding: 10px 0 10px 15px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.sort-button .text, .sort-button .triangle-down {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.sort-button .triangle-down {
+  border-top: 5px solid #999999;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  position: absolute;
+  right: 10px;
+  top: 17px;
+}
+
+.sort-dropdown {
+  display: none;
+  position: absolute;
+  background: #f2f2f2;
+  box-shadow: 0 0 5px 0 #999999;
+  width: 100%;
+  top: 15px;
+  left: 0;
+  border-radius: 3px;
+  padding: 30px 0 5px 10px;
+  box-sizing: border-box;
+  z-index: 0;
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #999999;
+}
+
+.sort-dropdown .active {
+  display: none;
+}
+
+.sort-dropdown div {
+  margin: 5px 0;
+  cursor: pointer;
 }
