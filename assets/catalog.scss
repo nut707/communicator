@@ -76,3 +76,14 @@
     cursor: pointer;
   }
 }
+
+.catalog{
+  .filter{
+    width: 23.5%;
+    .list{
+      height: 200px;
+      overflow-y: scroll;
+    }
+
+  }
+}

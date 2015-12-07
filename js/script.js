@@ -1,3 +1,4 @@
+
 $(document).ready(function($) {
   
   //dropdown on header
@@ -17,6 +18,7 @@ $(document).ready(function($) {
     
   })
 
+  //video
   $('video').click(function(){
     if (this.paused){
       this.play();
@@ -26,5 +28,5 @@ $(document).ready(function($) {
       this.pause();
     }
   });
-
+  
 });

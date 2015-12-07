@@ -6,7 +6,6 @@
       Смартфоны
     %script{src:'js/jquery-2.1.4.min.js'}
     %script{src:'js/script.js'}
-    
     %link{rel:'stylesheet',href:'style/style.css'}
   %body
     .headder-wrapper
@@ -61,7 +60,21 @@
       .triangle-right
       .current-page Смартфоны
     .catalog.container
-      .filter
+      %form.filter
+        .row
+          %input.blue-button{value:'Подобрать'}
+          .clear-filter Сбросить
+        .row
+          .title Производитель
+          .list
+            .item.radio.active
+              %input#manufacturer_1{type: "radio"}
+              %label{for:"manufacturer_1"} Apple
+            -(2..20).each do |i|
+              .item.radio
+                %input{type: "radio",id:"manufacturer_#{i}"}
+                %label{for:"manufacturer_#{i}"} ASUS
+
     .footer-wrapper
       %footer.container
         .col-1

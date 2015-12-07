@@ -1351,3 +1351,12 @@ video {
   margin: 5px 0;
   cursor: pointer;
 }
+
+.catalog .filter {
+  width: 23.5%;
+}
+
+.catalog .filter .list {
+  height: 200px;
+  overflow-y: scroll;
+}
