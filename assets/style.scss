@@ -4,6 +4,7 @@ $grey9: #999999;
 $f2: #f2f2f2;
 $orange: #eeb044;
 $blue:#0099cc;
+$red:#ef2e38;
 
 @font-face{
   font-family: OpenSans-Bold;
@@ -434,7 +435,111 @@ video{
   font-size: 0.9em;
   padding-bottom: 0;
 }
-//scrollbar
+
+//slider-ui
+.ui-slider-horizontal .ui-slider-handle{
+  border-radius: 100%;
+  border: 5px #51bdf5 solid;
+  width: 5px;
+  height: 5px;
+  top:-0.3em;
+  &:focus{
+    outline: none;
+  }
+}
+.ui-slider-horizontal{
+  height: 7px;
+  border-radius: 10px;
+}
+
+.ui-widget-content{
+  background-color: $f2;
+  box-shadow: inset 0px 0px 1px 0px $light-grey;
+  border: none;
+}
+.ui-widget-header{
+  background: $blue;
+}
+//checkboxes
+input[type="checkbox"]{
+  display:none;
+}
+input[type="checkbox"] + label{
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+}
+input[type="checkbox"] + label:before{
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  position: absolute;
+  top: 4px;
+  left:0;
+  background: $light-grey;
+}
+input[type="checkbox"] + label:after{
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: $blue;
+  top: 4px;
+  left:0px;
+  transition: all .2s;
+  opacity: 0;
+  transform: scale(0);
+}
+input[type="checkbox"]:checked + label:after{
+  opacity: 1;
+  transform: scale(1);
+}
+input[type="checkbox"]:disabled + label{
+  color: $light-grey;
+}
+
+
+//radio
+input[type="radio"]{
+  display:none;
+}
+input[type="radio"] + label{
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+}
+input[type="radio"] + label:before{
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  position: absolute;
+  top: 4px;
+  left:0;
+  background: $light-grey;
+}
+input[type="radio"] + label:after{
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: $blue;
+  top: 4px;
+  left:0px;
+  transition: all .2s;
+  opacity: 0;
+  transform: scale(0);
+}
+input[type="radio"]:checked + label:after{
+  opacity: 1;
+  transform: scale(1);
+}
+input[type="radio"]:disabled + label{
+  color: $light-grey;
+}
 
 @import 'login';
 @import 'cart';

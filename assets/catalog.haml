@@ -5,7 +5,9 @@
     %title
       Смартфоны
     %script{src:'js/jquery-2.1.4.min.js'}
+    %script{src:'jquery.ui/jquery-ui.min.js'}
     %script{src:'js/script.js'}
+    %link{rel:'stylesheet',href:'jquery.ui/jquery-ui.min.css'}
     %link{rel:'stylesheet',href:'style/style.css'}
   %body
     .headder-wrapper
@@ -59,22 +61,146 @@
       %a{href:'/main.html'} Каталог
       .triangle-right
       .current-page Смартфоны
-    .catalog.container
+    .catalog.container.grey-bot
       %form.filter
         .row
-          %input.blue-button{value:'Подобрать'}
-          .clear-filter Сбросить
+          %input.blue-button{type:'submit',value:'Подобрать'}
+          %input.clear-filter{type:"reset", value:"Сбросить"} 
         .row
           .title Производитель
           .list
-            .item.radio.active
-              %input#manufacturer_1{type: "radio"}
+            .item
+              %input#manufacturer_1{type: "checkbox"}
               %label{for:"manufacturer_1"} Apple
             -(2..20).each do |i|
-              .item.radio
-                %input{type: "radio",id:"manufacturer_#{i}"}
+              .item
+                %input{type: "checkbox",id:"manufacturer_#{i}"}
                 %label{for:"manufacturer_#{i}"} ASUS
-
+        .row
+          .title Цена
+          .slider-input
+            %input.price-min{:type => "text"}
+            %span.divider до
+            %input.price-max{:type => "text"}
+          .slider-price
+        .row
+          .title Цвет
+          .list
+            .item.radio
+              %input#color_1{type: "checkbox",disabled:''}
+              %label{for:"color_1"} Белый
+            -(2..20).each do |i|
+              .item.radio
+                %input{type: "checkbox", id:"color_#{i}"}
+                %label{for:"color_#{i}"} Черный
+        .row
+          .title Размер экрана
+          .slider-input
+            %input.display-size-min{:type => "text"}
+            %span.divider до
+            %input.display-size-max{:type => "text"}
+          .slider-display-size
+        .row
+          .title Операционная система
+          .list
+            .item.radio
+              %input#os_1{type: "checkbox",disabled:''}
+              %label{for:"os_1"} Android 4.1
+            -(2..20).each do |i|
+              .item.radio
+                %input{type: "checkbox", id:"os_#{i}"}
+                %label{for:"os_#{i}"} Android 4.#{i}
+        .row
+          .title Объем памяти
+          .slider-input
+            %input.ram-min{:type => "text"}
+            %span.divider до
+            %input.ram-max{:type => "text"}
+          .slider-ram
+        .row.lte
+          .title LTE(4G)
+          .item.radio
+            %input#4g-yes{type: "radio",name:'4g'}
+            %label{for:"4g-yes"} Есть
+          .item.radio
+            %input#4g-no{type: "radio",name:'4g'}
+            %label{for:"4g-no"} Нет
+        .row
+          %input.blue-button{type:'submit',value:'Подобрать'}
+          %input.clear-filter{type:"reset", value:"Сбросить"}
+      .main
+        %img.baner{src:'/img/catalog-baner.jpg'}
+        .best-offer
+          %h2 ЛУЧШИЕ ПРЕДЛОЖЕНИЯ
+          .item
+            %a{href:'/content.html'}
+              %img{src:'/img/catalog-item.jpg'}
+              .name Apple iPhone 6, 16GB 
+              .color Silver
+              .price
+                .new 
+                  49990 
+                  .rub
+                .old
+                  53200
+                  .rub
+            .to-cart.blue-button В корзину
+            .labels
+              .new new
+              .discount -10%
+          .item
+            %a{href:'/content.html'}
+              %img{src:'/img/catalog-item.jpg'}
+              .name Apple iPhone 6, 16GB 
+              .color Silver
+              .price
+                .new 
+                  49990 
+                  .rub
+                .old
+                  53200
+                  .rub
+            .to-cart.blue-button В корзину
+            .labels
+              .discount -10%
+          .item
+            %a{href:'/content.html'}
+              %img{src:'/img/catalog-item.jpg'}
+              .name Apple iPhone 6, 16GB 
+              .color Silver
+              .price
+                49990
+                .rub  
+              .to-cart.blue-button В корзину
+              .labels
+                .new new
+        .search-result
+          %h2 Apple
+          -(0...15).each do
+            .item
+              %a{href:'/content.html'}
+                %img{src:'/img/catalog-item.jpg'}
+                .name Apple iPhone 6, 16GB 
+                .color Silver
+                .price
+                  49990
+                  .rub  
+                .to-cart.blue-button В корзину
+                .labels
+          .paginator-wrapper
+            .paginator
+              %a.back{href:'#'} Назад
+              %a.p{href:'#'} 1
+              %a.p.active{href:'#'} 2
+              %a.p{href:'#'} 3
+              %a.p{href:'#'} 4
+              %a ...
+              %a.p{href:'#'} 10
+              %a.fw{href:'#'} Вперёд
+            .show-amount
+              Показывать по
+              %a.active{href:'#'} 15
+              %a{href:'#'} 45
     .footer-wrapper
       %footer.container
         .col-1
@@ -119,3 +245,4 @@
           вконтакте
         %a.inst{href:'#'}
           Instagram
+    %script{src:'js/filter.js'}

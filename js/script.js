@@ -1,6 +1,10 @@
 
 $(document).ready(function($) {
-  
+  //show cart button on catalog
+  $('.item').hover(function(){
+    $(this).find('.to-cart').toggleClass('show')
+  })
+
   //dropdown on header
   $('#catalog-dropdown').click(function(){
     $('.catalog-dropdown-wrapper').slideToggle()

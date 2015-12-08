@@ -6,7 +6,9 @@
       Смартфоны
     </title>
     <script src='js/jquery-2.1.4.min.js'></script>
+    <script src='jquery.ui/jquery-ui.min.js'></script>
     <script src='js/script.js'></script>
+    <link href='jquery.ui/jquery-ui.min.css' rel='stylesheet'>
     <link href='style/style.css' rel='stylesheet'>
   </head>
   <body>
@@ -82,98 +84,589 @@
       <div class='triangle-right'></div>
       <div class='current-page'>Смартфоны</div>
     </div>
-    <div class='catalog container'>
+    <div class='catalog container grey-bot'>
       <form class='filter'>
         <div class='row'>
-          <input class='blue-button' value='Подобрать'>
-          <div class='clear-filter'>Сбросить</div>
+          <input class='blue-button' type='submit' value='Подобрать'>
+          <input class='clear-filter' type='reset' value='Сбросить'>
         </div>
         <div class='row'>
           <div class='title'>Производитель</div>
           <div class='list'>
-            <div class='item radio active'>
-              <input id='manufacturer_1' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_1' type='checkbox'>
               <label for='manufacturer_1'>Apple</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_2' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_2' type='checkbox'>
               <label for='manufacturer_2'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_3' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_3' type='checkbox'>
               <label for='manufacturer_3'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_4' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_4' type='checkbox'>
               <label for='manufacturer_4'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_5' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_5' type='checkbox'>
               <label for='manufacturer_5'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_6' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_6' type='checkbox'>
               <label for='manufacturer_6'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_7' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_7' type='checkbox'>
               <label for='manufacturer_7'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_8' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_8' type='checkbox'>
               <label for='manufacturer_8'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_9' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_9' type='checkbox'>
               <label for='manufacturer_9'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_10' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_10' type='checkbox'>
               <label for='manufacturer_10'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_11' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_11' type='checkbox'>
               <label for='manufacturer_11'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_12' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_12' type='checkbox'>
               <label for='manufacturer_12'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_13' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_13' type='checkbox'>
               <label for='manufacturer_13'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_14' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_14' type='checkbox'>
               <label for='manufacturer_14'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_15' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_15' type='checkbox'>
               <label for='manufacturer_15'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_16' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_16' type='checkbox'>
               <label for='manufacturer_16'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_17' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_17' type='checkbox'>
               <label for='manufacturer_17'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_18' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_18' type='checkbox'>
               <label for='manufacturer_18'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_19' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_19' type='checkbox'>
               <label for='manufacturer_19'>ASUS</label>
             </div>
-            <div class='item radio'>
-              <input id='manufacturer_20' type='radio'>
+            <div class='item'>
+              <input id='manufacturer_20' type='checkbox'>
               <label for='manufacturer_20'>ASUS</label>
             </div>
           </div>
         </div>
+        <div class='row'>
+          <div class='title'>Цена</div>
+          <div class='slider-input'>
+            <input class='price-min' type='text'>
+            <span class='divider'>до</span>
+            <input class='price-max' type='text'>
+          </div>
+          <div class='slider-price'></div>
+        </div>
+        <div class='row'>
+          <div class='title'>Цвет</div>
+          <div class='list'>
+            <div class='item radio'>
+              <input disabled='' id='color_1' type='checkbox'>
+              <label for='color_1'>Белый</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_2' type='checkbox'>
+              <label for='color_2'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_3' type='checkbox'>
+              <label for='color_3'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_4' type='checkbox'>
+              <label for='color_4'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_5' type='checkbox'>
+              <label for='color_5'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_6' type='checkbox'>
+              <label for='color_6'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_7' type='checkbox'>
+              <label for='color_7'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_8' type='checkbox'>
+              <label for='color_8'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_9' type='checkbox'>
+              <label for='color_9'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_10' type='checkbox'>
+              <label for='color_10'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_11' type='checkbox'>
+              <label for='color_11'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_12' type='checkbox'>
+              <label for='color_12'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_13' type='checkbox'>
+              <label for='color_13'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_14' type='checkbox'>
+              <label for='color_14'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_15' type='checkbox'>
+              <label for='color_15'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_16' type='checkbox'>
+              <label for='color_16'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_17' type='checkbox'>
+              <label for='color_17'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_18' type='checkbox'>
+              <label for='color_18'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_19' type='checkbox'>
+              <label for='color_19'>Черный</label>
+            </div>
+            <div class='item radio'>
+              <input id='color_20' type='checkbox'>
+              <label for='color_20'>Черный</label>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='title'>Размер экрана</div>
+          <div class='slider-input'>
+            <input class='display-size-min' type='text'>
+            <span class='divider'>до</span>
+            <input class='display-size-max' type='text'>
+          </div>
+          <div class='slider-display-size'></div>
+        </div>
+        <div class='row'>
+          <div class='title'>Операционная система</div>
+          <div class='list'>
+            <div class='item radio'>
+              <input disabled='' id='os_1' type='checkbox'>
+              <label for='os_1'>Android 4.1</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_2' type='checkbox'>
+              <label for='os_2'>Android 4.2</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_3' type='checkbox'>
+              <label for='os_3'>Android 4.3</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_4' type='checkbox'>
+              <label for='os_4'>Android 4.4</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_5' type='checkbox'>
+              <label for='os_5'>Android 4.5</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_6' type='checkbox'>
+              <label for='os_6'>Android 4.6</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_7' type='checkbox'>
+              <label for='os_7'>Android 4.7</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_8' type='checkbox'>
+              <label for='os_8'>Android 4.8</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_9' type='checkbox'>
+              <label for='os_9'>Android 4.9</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_10' type='checkbox'>
+              <label for='os_10'>Android 4.10</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_11' type='checkbox'>
+              <label for='os_11'>Android 4.11</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_12' type='checkbox'>
+              <label for='os_12'>Android 4.12</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_13' type='checkbox'>
+              <label for='os_13'>Android 4.13</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_14' type='checkbox'>
+              <label for='os_14'>Android 4.14</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_15' type='checkbox'>
+              <label for='os_15'>Android 4.15</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_16' type='checkbox'>
+              <label for='os_16'>Android 4.16</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_17' type='checkbox'>
+              <label for='os_17'>Android 4.17</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_18' type='checkbox'>
+              <label for='os_18'>Android 4.18</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_19' type='checkbox'>
+              <label for='os_19'>Android 4.19</label>
+            </div>
+            <div class='item radio'>
+              <input id='os_20' type='checkbox'>
+              <label for='os_20'>Android 4.20</label>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='title'>Объем памяти</div>
+          <div class='slider-input'>
+            <input class='ram-min' type='text'>
+            <span class='divider'>до</span>
+            <input class='ram-max' type='text'>
+          </div>
+          <div class='slider-ram'></div>
+        </div>
+        <div class='row lte'>
+          <div class='title'>LTE(4G)</div>
+          <div class='item radio'>
+            <input id='4g-yes' name='4g' type='radio'>
+            <label for='4g-yes'>Есть</label>
+          </div>
+          <div class='item radio'>
+            <input id='4g-no' name='4g' type='radio'>
+            <label for='4g-no'>Нет</label>
+          </div>
+        </div>
+        <div class='row'>
+          <input class='blue-button' type='submit' value='Подобрать'>
+          <input class='clear-filter' type='reset' value='Сбросить'>
+        </div>
       </form>
+      <div class='main'>
+        <img class='baner' src='/img/catalog-baner.jpg'>
+        <div class='best-offer'>
+          <h2>ЛУЧШИЕ ПРЕДЛОЖЕНИЯ</h2>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                <div class='new'>
+                  49990
+                  <div class='rub'></div>
+                </div>
+                <div class='old'>
+                  53200
+                  <div class='rub'></div>
+                </div>
+              </div>
+            </a>
+            <div class='to-cart blue-button'>В корзину</div>
+            <div class='labels'>
+              <div class='new'>new</div>
+              <div class='discount'>-10%</div>
+            </div>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                <div class='new'>
+                  49990
+                  <div class='rub'></div>
+                </div>
+                <div class='old'>
+                  53200
+                  <div class='rub'></div>
+                </div>
+              </div>
+            </a>
+            <div class='to-cart blue-button'>В корзину</div>
+            <div class='labels'>
+              <div class='discount'>-10%</div>
+            </div>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'>
+                <div class='new'>new</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='search-result'>
+          <h2>Apple</h2>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='item'>
+            <a href='/content.html'>
+              <img src='/img/catalog-item.jpg'>
+              <div class='name'>Apple iPhone 6, 16GB</div>
+              <div class='color'>Silver</div>
+              <div class='price'>
+                49990
+                <div class='rub'></div>
+              </div>
+              <div class='to-cart blue-button'>В корзину</div>
+              <div class='labels'></div>
+            </a>
+          </div>
+          <div class='paginator-wrapper'>
+            <div class='paginator'>
+              <a class='back' href='#'>Назад</a>
+              <a class='p' href='#'>1</a>
+              <a class='p active' href='#'>2</a>
+              <a class='p' href='#'>3</a>
+              <a class='p' href='#'>4</a>
+              <a>...</a>
+              <a class='p' href='#'>10</a>
+              <a class='fw' href='#'>Вперёд</a>
+            </div>
+            <div class='show-amount'>
+              Показывать по
+              <a class='active' href='#'>15</a>
+              <a href='#'>45</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class='footer-wrapper'>
       <footer class='container'>
@@ -237,5 +730,6 @@
         </a>
       </div>
     </div>
+    <script src='js/filter.js'></script>
   </body>
 </html>

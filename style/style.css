@@ -490,6 +490,121 @@ video {
   padding-bottom: 0;
 }
 
+.ui-slider-horizontal .ui-slider-handle {
+  border-radius: 100%;
+  border: 5px #51bdf5 solid;
+  width: 5px;
+  height: 5px;
+  top: -0.3em;
+}
+
+.ui-slider-horizontal .ui-slider-handle:focus {
+  outline: none;
+}
+
+.ui-slider-horizontal {
+  height: 7px;
+  border-radius: 10px;
+}
+
+.ui-widget-content {
+  background-color: #f2f2f2;
+  box-shadow: inset 0px 0px 1px 0px #cccccc;
+  border: none;
+}
+
+.ui-widget-header {
+  background: #0099cc;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+}
+
+input[type="checkbox"] + label:before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background: #cccccc;
+}
+
+input[type="checkbox"] + label:after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #0099cc;
+  top: 4px;
+  left: 0px;
+  transition: all 0.2s;
+  opacity: 0;
+  transform: scale(0);
+}
+
+input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+input[type="checkbox"]:disabled + label {
+  color: #cccccc;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+}
+
+input[type="radio"] + label:before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background: #cccccc;
+}
+
+input[type="radio"] + label:after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #0099cc;
+  top: 4px;
+  left: 0px;
+  transition: all 0.2s;
+  opacity: 0;
+  transform: scale(0);
+}
+
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+input[type="radio"]:disabled + label {
+  color: #cccccc;
+}
+
 .login .signin, .login .reg {
   display: inline-block;
   vertical-align: top;
@@ -1353,10 +1468,244 @@ video {
 }
 
 .catalog .filter {
+  display: inline-block;
+  margin-right: 17px;
   width: 23.5%;
+  box-shadow: 0 0 5px #cccccc;
 }
 
-.catalog .filter .list {
-  height: 200px;
+.catalog .filter .blue-button, .catalog .filter .clear-filter {
+  width: 100px;
+  height: 35px;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 0;
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+}
+
+.catalog .filter .clear-filter {
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  border-radius: 25px;
+  text-align: left;
+  padding-left: 15px;
+  background: url(../img/clear-filter.png) no-repeat 85% 50%;
+}
+
+.catalog .filter .row {
+  padding: 15px;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.catalog .filter .row .title {
+  font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.catalog .filter .row .list {
+  max-height: 200px;
   overflow-y: scroll;
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+}
+
+.catalog .filter .row:last-child {
+  border: none;
+}
+
+.catalog .filter .slider-input {
+  text-align: center;
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.catalog .filter .slider-input .divider {
+  margin: 5px;
+}
+
+.catalog .filter input[type='text'] {
+  border-radius: 3px;
+  background: #f2f2f2;
+  border: none;
+  box-shadow: inset 0 1px 3px 0 #cccccc;
+  width: 55px;
+  height: 27px;
+  color: #888;
+  padding-left: 10px;
+}
+
+.catalog .filter .lte .radio {
+  display: inline-block;
+  width: 33%;
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+}
+
+.catalog .main {
+  display: inline-block;
+  width: 74%;
+  vertical-align: top;
+}
+
+.catalog .main .best-offer {
+  margin: 60px 0 20px;
+}
+
+.catalog .main h2 {
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.catalog .main .item {
+  width: 33%;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 50px 40px 20px;
+  border-radius: 5px;
+}
+
+.catalog .main .item:hover {
+  box-shadow: 0 0 10px 0 #cccccc;
+}
+
+.catalog .main .item .name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.catalog .main .item .name, .catalog .main .item .color {
+  font-family: Intro-Book, Arial, Helvetica, sans-serif;
+}
+
+.catalog .main .item .price {
+  margin-top: 10px;
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.catalog .main .item .price div {
+  display: inline-block;
+}
+
+.catalog .main .item .price .new {
+  color: #ef2e38;
+}
+
+.catalog .main .item .price .old {
+  margin-left: 5px;
+  color: #cccccc;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.catalog .main .item .labels {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.catalog .main .item .labels div {
+  font-family: Intro-Book, Arial, Helvetica, sans-serif;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 100%;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.catalog .main .item .labels .new {
+  background: #5fca9b;
+}
+
+.catalog .main .item .labels .discount {
+  background: #ef2e38;
+}
+
+.catalog .main .item .to-cart {
+  visibility: hidden;
+  margin: 15px auto 0;
+  width: 120px;
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background: #0099cc;
+  background-image: url(../img/catalog-cart.png);
+  background-repeat: no-repeat;
+  background-position: 13px 50%;
+  padding: 12px 10px 10px 35px;
+  box-shadow: 0 2px 1px -1px #333333;
+}
+
+.catalog .main .item .show {
+  visibility: visible;
+}
+
+.catalog .main .paginator-wrapper {
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.catalog .main .paginator {
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.catalog .main .paginator .fw {
+  margin-left: 15px;
+}
+
+.catalog .main .paginator .back {
+  margin-right: 15px;
+}
+
+.catalog .main .paginator a {
+  display: inline-block;
+  color: #999999;
+  text-align: center;
+}
+
+.catalog .main .paginator a.p {
+  width: 25px;
+  height: 25px;
+}
+
+.catalog .main .paginator a.active {
+  background: #0099cc;
+  border-radius: 100%;
+  color: white;
+}
+
+.catalog .main .show-amount, .catalog .main .paginator {
+  display: inline-block;
+}
+
+.catalog .main .show-amount {
+  margin-top: 5px;
+  float: right;
+  font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #333333;
+}
+
+.catalog .main .show-amount a {
+  font-family: OpenSans-Bold, Arial, Helvetica, sans-serif;
+  color: #999999;
+  margin-left: 10px;
+}
+
+.catalog .main .show-amount a.active {
+  color: #0099cc;
 }
