@@ -101,7 +101,7 @@ nav a:last-child {
   width: 235px;
   height: 37px;
   margin: 0 0 0 7.75%;
-  background: url(/img/header-logo.png) no-repeat 50% 100%;
+  background: url(../img/header-logo.png) no-repeat 50% 100%;
   vertical-align: middle;
 }
 
@@ -123,18 +123,18 @@ nav a:last-child {
 
 .search-user-cart-block .search {
   display: inline-block;
-  background: url(/img/header-search.png) no-repeat 50%;
+  background: url(..img/header-search.png) no-repeat 50%;
 }
 
 .search-user-cart-block .user {
   display: inline-block;
-  background: url(/img/header-user.png) no-repeat 50%;
+  background: url(..img/header-user.png) no-repeat 50%;
 }
 
 .search-user-cart-block .cart {
   display: inline-block;
   width: auto;
-  background: url(/img/header-cart.png) no-repeat 20px 50%;
+  background: url(..img/header-cart.png) no-repeat 20px 50%;
   padding-left: 40px;
   text-decoration: none;
 }
@@ -186,35 +186,35 @@ nav a:last-child {
 }
 
 .catalog-dropdown .smarts {
-  background: url(/img/katalog-dropdown-smarts.jpg) no-repeat 50% 50%;
+  background: url(../img/katalog-dropdown-smarts.jpg) no-repeat 50% 50%;
 }
 
 .catalog-dropdown .tablets {
-  background: url(/img/katalog-dropdown-tablets.jpg) no-repeat 50% 50%;
+  background: url(../img/katalog-dropdown-tablets.jpg) no-repeat 50% 50%;
 }
 
 .catalog-dropdown .accses {
-  background: url(/img/katalog-dropdown-accses.jpg) no-repeat 50% 50%;
+  background: url(../img/katalog-dropdown-accses.jpg) no-repeat 50% 50%;
 }
 
 .catalog-dropdown .ebooks {
-  background: url(/img/katalog-dropdown-ebooks.jpg) no-repeat 60% 50%;
+  background: url(../img/katalog-dropdown-ebooks.jpg) no-repeat 60% 50%;
 }
 
 .catalog-dropdown .cases {
-  background: url(/img/katalog-dropdown-cases.jpg) no-repeat 50% 50%;
+  background: url(../img/katalog-dropdown-cases.jpg) no-repeat 50% 50%;
 }
 
 .catalog-dropdown .psp {
-  background: url(/img/katalog-dropdown-psp.jpg) no-repeat 50% 50%;
+  background: url(../img/katalog-dropdown-psp.jpg) no-repeat 50% 50%;
 }
 
 .catalog-dropdown .headphones {
-  background: url(/img/katalog-dropdown-headphones.jpg) no-repeat 50% 50%;
+  background: url(../img/katalog-dropdown-headphones.jpg) no-repeat 50% 50%;
 }
 
 .catalog-dropdown .accums {
-  background: url(/img/katalog-dropdown-accums.jpg) no-repeat 50% 50%;
+  background: url(../img/katalog-dropdown-accums.jpg) no-repeat 50% 50%;
 }
 
 .grey-bg {
@@ -251,11 +251,11 @@ nav a:last-child {
 }
 
 .subheader .back {
-  background: url(/img/back-icon.png) no-repeat 50% 50%;
+  background: url(../img/back-icon.png) no-repeat 50% 50%;
 }
 
 .subheader .clear {
-  background: url(/img/cross-grey.png) no-repeat 50% 50%;
+  background: url(../img/cross-grey.png) no-repeat 50% 50%;
 }
 
 .subheader .social2 {
@@ -451,21 +451,21 @@ footer .button-map {
 
 .social2 .tw {
   background-color: #4fc9f1;
-  background-image: url(/img/soc2-tw.png), url(/img/soc2-arrow.png);
+  background-image: url(../img/soc2-tw.png), url(../img/soc2-arrow.png);
   background-position: 10px 50%, 50% 50%;
   background-repeat: no-repeat,no-repeat;
 }
 
 .social2 .fb {
   background-color: #075dde;
-  background-image: url(/img/soc2-fb.png), url(/img/soc2-arrow.png);
+  background-image: url(../img/soc2-fb.png), url(../img/soc2-arrow.png);
   background-position: 14px 50%, 50% 50%;
   background-repeat: no-repeat,no-repeat;
 }
 
 .social2 .vk {
   background-color: #1576b3;
-  background-image: url(/img/soc2-vk.png), url(/img/soc2-arrow.png);
+  background-image: url(../img/soc2-vk.png), url(../img/soc2-arrow.png);
   background-position: 14px 50%, 50% 50%;
   background-repeat: no-repeat,no-repeat;
 }
