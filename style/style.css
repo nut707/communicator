@@ -1709,3 +1709,15 @@ input[type="radio"]:disabled + label {
 .catalog .main .show-amount a.active {
   color: #0099cc;
 }
+
+.main .bx-wrapper .bx-pager {
+  bottom: 40px;
+}
+
+.main .bx-wrapper .bx-pager.bx-default-pager a:hover, .main .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: white;
+}
+
+.main .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #cccccc;
+}

@@ -6,8 +6,8 @@
       Главная
     %script{src:'js/jquery-2.1.4.min.js'}
     %script{src:'js/script.js'}
-    
     %link{rel:'stylesheet',href:'style/style.css'}
+    %link{rel:'stylesheet',href:'style/bxslider.css'}
   %body
     .headder-wrapper
       %header.container
@@ -36,7 +36,15 @@
         %a.psp{href:'#'} PSP
         %a.headphones{href:'#'} Наушники
         %a.accums{href:'#'} Зарядные устройства
-    .container
+    .main.container
+      %ul.bxslider.baner
+        %li
+          %img{src:'img/main-baner.jpg'}
+        %li
+          %img{src:'img/main-baner-2.jpg'}
+        %li
+          %img{src:'img/main-baner.jpg'}
+
     .footer-wrapper
       %footer.container
         .col-1
@@ -81,3 +89,6 @@
           вконтакте
         %a.inst{href:'#'}
           Instagram
+    %script{src:'jquery.bxslider/jquery.bxslider.min.js'}
+    :javascript
+      $('.bxslider').bxSlider();

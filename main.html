@@ -8,6 +8,7 @@
     <script src='js/jquery-2.1.4.min.js'></script>
     <script src='js/script.js'></script>
     <link href='style/style.css' rel='stylesheet'>
+    <link href='style/bxslider.css' rel='stylesheet'>
   </head>
   <body>
     <div class='headder-wrapper'>
@@ -46,7 +47,19 @@
         <a class='accums' href='#'>Зарядные устройства</a>
       </div>
     </div>
-    <div class='container'></div>
+    <div class='main container'>
+      <ul class='bxslider baner'>
+        <li>
+          <img src='img/main-baner.jpg'>
+        </li>
+        <li>
+          <img src='img/main-baner-2.jpg'>
+        </li>
+        <li>
+          <img src='img/main-baner.jpg'>
+        </li>
+      </ul>
+    </div>
     <div class='footer-wrapper'>
       <footer class='container'>
         <div class='col-1'>
@@ -109,5 +122,9 @@
         </a>
       </div>
     </div>
+    <script src='jquery.bxslider/jquery.bxslider.min.js'></script>
+    <script>
+      $('.bxslider').bxSlider();
+    </script>
   </body>
 </html>

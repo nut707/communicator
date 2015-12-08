@@ -1,0 +1,11 @@
+.main{
+  .bx-wrapper .bx-pager{
+    bottom: 40px;
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+    background: white;
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a{
+    background: $light-grey;
+  }
+}
