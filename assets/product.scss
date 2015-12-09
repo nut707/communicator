@@ -1,4 +1,5 @@
 .product{
+  vertical-align: top;
   .main-info{
     max-width: 340px;
     box-shadow: 0 0 5px 0 $light-grey;
@@ -81,6 +82,37 @@
   }
   .social2 a:first-child{
     margin-left: 0px;
+  }
+  .col{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .col-2{
+    float: right;
+  }
+  .preview{
+    margin-top: 30px;
+    &>div{
+      display: inline-block;
+    }
+    .zoom{
+      width: 450px;
+      height: 450px;
+    }
+    .bx-wrapper{
+      margin-left: 15px !important;
+      max-height: 420px !important;
+    }
+    .bx-prev{
+      top: -15px;
+      left: 30px;
+      transform: rotate(90deg);
+    }
+    .bx-next{
+      top: 105%;
+      right: 60px;
+      transform: rotate(90deg);
+    }
   }
   .menu{
     font-family: Intro-Book, Arial, Helvetica, sans-serif;

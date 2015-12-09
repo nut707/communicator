@@ -1068,6 +1068,10 @@ input[type="radio"]:disabled + label {
   font-size: 18px;
 }
 
+.product {
+  vertical-align: top;
+}
+
 .product .main-info {
   max-width: 340px;
   box-shadow: 0 0 5px 0 #cccccc;
@@ -1167,6 +1171,45 @@ input[type="radio"]:disabled + label {
 
 .product .social2 a:first-child {
   margin-left: 0px;
+}
+
+.product .col {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product .col-2 {
+  float: right;
+}
+
+.product .preview {
+  margin-top: 30px;
+}
+
+.product .preview > div {
+  display: inline-block;
+}
+
+.product .preview .zoom {
+  width: 450px;
+  height: 450px;
+}
+
+.product .preview .bx-wrapper {
+  margin-left: 15px !important;
+  max-height: 420px !important;
+}
+
+.product .preview .bx-prev {
+  top: -15px;
+  left: 30px;
+  transform: rotate(90deg);
+}
+
+.product .preview .bx-next {
+  top: 105%;
+  right: 60px;
+  transform: rotate(90deg);
 }
 
 .product .menu {
@@ -2016,6 +2059,7 @@ input[type="radio"]:disabled + label {
 
 .main .about-wrapper .head .urls {
   float: right;
+  margin-right: 55px;
 }
 
 .main .about-wrapper .head .urls a {

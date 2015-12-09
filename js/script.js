@@ -1,5 +1,11 @@
 
 $(document).ready(function($) {
+
+  $('.slide').click(function() {
+    console.log('sdfsdf')
+    var url=$(this).find('img').attr('src')
+    $('.zoom img').attr('src', url)
+  });
   //show cart button on catalog
   $('.item').hover(function(){
     $(this).find('.to-cart').toggleClass('show')

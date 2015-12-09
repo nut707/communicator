@@ -5,8 +5,9 @@
     %title
       Apple iPhone 6, space gray
     %script{src:'js/jquery-2.1.4.min.js'}
+    %script{src:'js/jquery.zoom.min.js'}
     %script{src:'js/script.js'}
-    
+    %link{rel:'stylesheet',href:'style/bxslider.css'}   
     %link{rel:'stylesheet',href:'style/style.css'}
   %body
     .headder-wrapper
@@ -42,46 +43,65 @@
         %a.back-button{href:'#'} 
           Назад
           %span.icon.back
-    .breadcrumps.container
-      %a{href:'/main.html'} Главная
-      .triangle-right
-      %a{href:'#'} Смартфоны
-      .triangle-right
-      .current-page Apple iPhone 6, space gray
+    
     .product.container
-      .main-info
-        .row
-          .price
-            .bold
-              49 990
-              .rub
-            .small-grey
-              Артикул 122933
-          .cart-button.blue-button
-            в корзину
-        .row
-          .title Цвет
-          %ul.color-pick
-            %li.color-1.active
-            %li.color-2
-            %li.color-3
-        .row
-          .title память
-          %ul.pick
-            %li.active 16
-            %li 32
-            %li 64
-            %li 128
-        .row
-          .title размер экрана
-          %ul.pick
-            %li 4.4
-            %li.active 5.5
-      .share Поделиться
-      .social2 
-        %a.tw{href:'#'} 13
-        %a.fb{href:'#'} 435
-        %a.vk{href:'#'} 666
+      .col
+        .breadcrumps.container
+          %a{href:'/main.html'} Главная
+          .triangle-right
+          %a{href:'#'} Смартфоны
+          .triangle-right
+          .current-page Apple iPhone 6, space gray
+        .main-info
+          .row
+            .price
+              .bold
+                49 990
+                .rub
+              .small-grey
+                Артикул 122933
+            .cart-button.blue-button
+              в корзину
+          .row
+            .title Цвет
+            %ul.color-pick
+              %li.color-1.active
+              %li.color-2
+              %li.color-3
+          .row
+            .title память
+            %ul.pick
+              %li.active 16
+              %li 32
+              %li 64
+              %li 128
+          .row
+            .title размер экрана
+            %ul.pick
+              %li 4.4
+              %li.active 5.5
+        .share Поделиться
+        .social2 
+          %a.tw{href:'#'} 13
+          %a.fb{href:'#'} 435
+          %a.vk{href:'#'} 666
+      .col.col-2
+        .preview
+          .zoom
+            %img{width:'450px',height:'450px',src:'https://macster-production.s3.amazonaws.com/uploads/image/file/11561/iphone-6-white-2-2.jpg'}
+          .pager
+            .slide
+              %img{width:'100px',height:'100px',src:"https://macster-production.s3.amazonaws.com/uploads/image/file/11561/iphone-6-white-2-2.jpg"}
+            .slide
+              %img{width:'100px',height:'100px',src:"http://o.aolcdn.com/hss/storage/midas/8cab7a7f04d8f71ed0c30c04f1e086ee/200767095/iPhone_6_family-10-630.jpg"}
+            .slide
+              %img{width:'100px',height:'100px',src:"http://www.ipeople.in.ua/files/uploads/_apple-iphone-6-e1410789464630-1940x1090.png"}
+            .slide
+              %img{width:'100px',height:'100px',src:"http://oxu.azstatic.com/uploads/W1siZiIsIjIwMTUvMDgvMjEvMTUvMTYvMjYvNTgzL0lwaG9uZTZGaWxlXzE0MTAzODExMjc3NDRfNzkzMjkyMl92ZXIxLjBfNjQwXzQ4MC5qcGciXV0?sha=973eae19"}
+            .slide
+              %img{width:'100px',height:'100px',src:"http://blog.blinds-2go.co.uk/wp-content/uploads/Seaside-Style-Theme.jpg"}
+            .slide
+              %img{width:'100px',height:'100px',src:"https://i.ytimg.com/vi/4CUvF95pmxY/maxresdefault.jpg"}
       .menu.grey-bot-shadow
         %a.active{href:'#'} Описание        
         %a{href:'#'} Технические характеристики
@@ -289,3 +309,16 @@
           вконтакте
         %a.inst{href:'#'}
           Instagram
+    %script{src:'jquery.bxslider/jquery.bxslider.min.js'}
+    :javascript
+      $(document).ready(function(){
+        $('.zoom').zoom();
+        $('.pager').bxSlider({
+          mode: 'vertical',
+          minSlides: 4,
+          maxSlides: 4,
+          pager:false,
+          moveSlides: 1,
+          slideMargin: 5
+        });
+      });
