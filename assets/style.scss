@@ -155,6 +155,7 @@ nav{
   z-index: 100;
   background: white;
   width: 100%;
+  z-index: 10000;
 }
 .catalog-dropdown{
   overflow: hidden;
@@ -539,6 +540,34 @@ input[type="radio"]:checked + label:after{
 }
 input[type="radio"]:disabled + label{
   color: $light-grey;
+}
+
+//labels
+.labels{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  text-align: center;
+  div{
+    font-family: Intro-Book, Arial, Helvetica, sans-serif;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 100%;
+    margin-left: 5px;
+    display: inline-block;
+  }
+  .new{
+    background: #5fca9b;
+  }
+  .discount{
+    background: $red;
+  }
+  .hit{
+    background: $blue;
+  }
 }
 
 @import 'login';

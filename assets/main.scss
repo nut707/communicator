@@ -1,11 +1,230 @@
 .main{
+  .baner-wrapper{
+    background: url(../img/background.png);
+    padding: 30px 0;
+  }
+  h2{
+    font-size: 26px;
+    font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+  .catalog{
+    padding: 60px 0;
+    a{
+      font-family: Intro-Book,Arial, Helvetica, sans-serif;
+      width: 19%;
+      height: 180px;
+      display: inline-block;
+      text-align: center;
+      line-height: 310px;
+      vertical-align: bottom;
+      font-size: 20px;
+      // margin-top: -5px;
+    }
+    .smarts{
+      background: url(../img/katalog-dropdown-smarts.jpg) no-repeat 50% 50%;
+    }
+    .tablets{
+      background: url(../img/katalog-dropdown-tablets.jpg) no-repeat 50% 50%;
+    }
+    .accses{
+      background: url(../img/katalog-dropdown-accses.jpg) no-repeat 50% 50%;
+    }
+    .ebooks{
+      background: url(../img/katalog-dropdown-ebooks.jpg) no-repeat 60% 50%;
+    }
+    .cases{
+      background: url(../img/katalog-dropdown-cases.jpg) no-repeat 50% 50%;
+    }
+  }
+  .feature{
+    padding: 50px 0;
+
+    &>a{
+      display: inline-block;
+      &:not(:last-child){
+        margin-right: 80px;
+      }
+      &:hover{
+        .title{
+          color: $blue;
+        }
+        &.feature-1 .icon{
+          background: $blue;
+          background-image: url(../img/feature-1-w.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+        &.feature-2 .icon{
+          background: $blue;
+          background-image: url(../img/feature-2-w.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+        &.feature-3 .icon{
+          background: $blue;
+          background-image: url(../img/feature-3-w.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+      }
+    }
+    .icon{
+      width: 90px;
+      height: 90px;
+      float: left;
+      border-radius: 100%;
+      background: $f2;
+      margin-right: 10px;
+    }
+    .feature-1 .icon{
+      background: $f2;
+      background-image: url(../img/feature-1.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .feature-2 .icon{
+      background: $f2;
+      background-image: url(../img/feature-2.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .feature-3 .icon{
+      background: $f2;
+      background-image: url(../img/feature-3.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .title{
+      font-family: Intro-Regular, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+    p{
+      font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
+      font-size: 12px;
+    }
+  }
+  .best-offer{
+    h2{
+      margin-top: 90px;
+      margin-bottom: 55px;
+    }
+    .select{
+      a{
+        display: inline-block;
+        min-width: 130px;
+        min-height: 130px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Inro-Book, Arial, Helvetica, sans-serif;
+        line-height: 170px;
+        &:hover{
+          color: #007dde;
+          &.smarts{
+            background: url(../img/offer-smart.png) no-repeat 55% 20px,url(../img/offer-hover.png) no-repeat 50% 0;
+          }
+          &.tablets{
+            background: url(../img/offer-tab.png) no-repeat 50% 30px,url(../img/offer-hover.png) no-repeat 50% 0;
+          }
+          &.accses{
+            background: url(../img/offer-acses.png) no-repeat 50% 30px,url(../img/offer-hover.png) no-repeat 50% 0;
+          }
+          &.ebooks{
+            background: url(../img/offer-ebook.png) no-repeat 50% 30px,url(../img/offer-hover.png) no-repeat 50% 0;
+          }
+          &.games{
+            background: url(../img/offer-psp.png) no-repeat 50% 40px,url(../img/offer-hover.png) no-repeat 50% 0;
+          }
+          &.cases{
+            background: url(../img/offer-case.png) no-repeat 50% 30px,url(../img/offer-hover.png) no-repeat 50% 0;
+          }
+        }
+      }
+      .smarts{
+        background: url(../img/offer-smart.png) no-repeat 55% 20px;
+      }
+      .tablets{
+        background: url(../img/offer-tab.png) no-repeat 50% 30px;
+      }
+      .accses{
+        background: url(../img/offer-acses.png) no-repeat 50% 30px;
+      }
+      .ebooks{
+        background: url(../img/offer-ebook.png) no-repeat 50% 30px;
+      }
+      .games{
+        background: url(../img/offer-psp.png) no-repeat 50% 40px;
+      }
+      .cases{
+        background: url(../img/offer-case.png) no-repeat 50% 30px;
+      }
+    }
+    .show .item{
+      position: relative;
+      box-sizing:border-box;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      padding: 50px 40px 20px;
+      border-radius: 5px;
+      &:hover{
+        box-shadow: 0 0 10px 0 $light-grey;
+      }
+      img{
+        margin: 0 auto;
+      }
+      .name{
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .name,.color{
+        font-family: Intro-Book, Arial, Helvetica, sans-serif;
+      }
+      .price{
+        margin-top: 10px;
+        font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        vertical-align: middle;
+        div{
+          display: inline-block;
+        }
+        .new{
+          color: $red;
+        }
+        .old{
+          margin-left: 5px;
+          color: $light-grey;
+          font-size: 12px;
+          text-decoration: line-through; 
+        }
+      }
+    }
+  }
+
+  .news{
+    .item{
+      position: relative;
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+    }
+  }
+
+
+
+  .bx-warpper{
+    margin: 0;
+  }
   .bx-wrapper .bx-pager{
     bottom: 40px;
   }
-  .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
-    background: white;
-  }
-  .bx-wrapper .bx-pager.bx-default-pager a{
-    background: $light-grey;
-  }
+  // .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+  //   background: white;
+  // }
+  // .bx-wrapper .bx-pager.bx-default-pager a{
+  //   background: $light-grey;
+  // }
 }

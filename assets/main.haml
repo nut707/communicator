@@ -36,14 +36,100 @@
         %a.psp{href:'#'} PSP
         %a.headphones{href:'#'} Наушники
         %a.accums{href:'#'} Зарядные устройства
-    .main.container
-      %ul.bxslider.baner
-        %li
-          %img{src:'img/main-baner.jpg'}
-        %li
-          %img{src:'img/main-baner-2.jpg'}
-        %li
-          %img{src:'img/main-baner.jpg'}
+    .main
+      .baner-wrapper
+        .container
+          %ul.bxslider-baner
+            %li
+              %img{src:'img/main-baner.jpg'}
+            %li
+              %img{src:'img/main-baner-2.jpg'}
+            %li
+              %img{src:'img/main-baner.jpg'}
+      .catalog.container.grey-bot
+        %h2 Каталог
+        %a.smarts{href:'#'} Смартфоны
+        %a.tablets{href:'#'} Планшеты
+        %a.cases{href:'#'} Чехлы
+        %a.accses{href:'#'} Аксессуары
+        %a.ebooks{href:'#'} Другие девайсы
+      .feature.container.grey-bot
+        %a.feature-1{href:''}
+          .icon
+          .title качество
+          %p У нас только качественная и надежная продукция
+        %a.feature-2{href:''}
+          .icon
+          .title доставка
+          %p Быстрая доставка во все регионы России
+        %a.feature-3{href:''}
+          .icon
+          .title техподдержка
+          %p Бесплатная техподдержку для вышего устройства
+      .best-offer.container.grey-bot
+        %h2 лучшие предложения
+        .select
+          %a.smarts{href:'#'} Смартфоны
+          %a.tablets{href:'#'} Планшеты
+          %a.accses{href:'#'} Аксессуары
+          %a.ebooks{href:'#'} Электронные книги
+          %a.games{href:'#'} Игры и гаджеты
+          %a.cases{href:'#'} Чехлы
+        .show
+          %ul.bxslider-show
+            %li.item
+              %a{href:'/content.html'}
+                %img{src:'img/catalog-item.jpg'}
+                .name Apple iPhone 6, 16GB 
+                .color Silver
+                .price
+                  .new 
+                    49990 
+                    .rub
+                  .old
+                    53200
+                    .rub
+              .labels
+                .new new
+                .discount -10%
+            -(0..6).each do |i|
+              %li.item
+                %a{href:'/content.html'}
+                  %img{src:'img/catalog-item.jpg'}
+                  .name Apple iPhone #{i}
+                  .color Silver
+                  .price
+                    49990
+                    .rub
+                .labels
+                  .new new
+      .news.container
+        %a.item{href:'#'}
+          %img{src:'img/news-1.jpg'}
+          .labels
+            .hit
+              ХИТ
+        %a.item{href:'#'}
+          %img{src:'img/news-1.jpg'}
+          .labels
+            .discount -10%
+        -(1..4).each do
+          %a.item{href:'#'}
+            %img{src:'img/news-1.jpg'}
+      .about-wrapper
+        .about.container
+          .head
+            .title О магазине
+            .urls
+              %a.active{href:'#'}Почему  мы        
+              %a{href:'#'}Доставка        
+              %a{href:'#'}Оплата        
+              %a{href:'#'}Карта проезда
+          %text
+            %h3 Компания «Коммуникатор» – крупнейшая во Владивостоке сеть магазинов электроники
+            %p география присутствия которой охватывает более 200 городов в разных регионах России. «Коммуникатор» – обладатель премий «Народная марка 2012», «Компания года 2012», «HR-бренд 2013», а также трехкратный лауреат премии «Права потребителей и качество обслуживания». «Коммуникатор» представляет широкий ассортимент качественных товаров ведущих мировых брендов.
+
+
 
     .footer-wrapper
       %footer.container
@@ -91,4 +177,11 @@
           Instagram
     %script{src:'jquery.bxslider/jquery.bxslider.min.js'}
     :javascript
-      $('.bxslider').bxSlider();
+      $('.bxslider-baner').bxSlider();
+      $('.bxslider-show').bxSlider({
+        slideWidth: 250,
+        minSlides:4,
+        maxSlides:4,
+        moveSlides: 1,
+        pager:false
+      });
