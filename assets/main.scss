@@ -1,7 +1,23 @@
 .main{
   .baner-wrapper{
     background: url(../img/background.png);
-    padding: 30px 0;
+    padding: 60px 0;
+  }
+  .yellow-button{
+    position: absolute;
+    bottom: 90px;
+    left: 90px;
+    background: #eeb044;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-family: Intro-Bold,Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    line-height: 50px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px -1px $grey;
   }
   h2{
     font-size: 26px;
@@ -116,12 +132,12 @@
       a{
         display: inline-block;
         min-width: 130px;
-        min-height: 130px;
+        height: 130px;
         text-align: center;
         font-size: 14px;
         font-family: Inro-Book, Arial, Helvetica, sans-serif;
         line-height: 170px;
-        &:hover{
+        &.active{
           color: #007dde;
           &.smarts{
             background: url(../img/offer-smart.png) no-repeat 55% 20px,url(../img/offer-hover.png) no-repeat 50% 0;
@@ -162,49 +178,56 @@
         background: url(../img/offer-case.png) no-repeat 50% 30px;
       }
     }
-    .show .item{
-      position: relative;
-      box-sizing:border-box;
-      position: relative;
-      display: inline-block;
-      text-align: center;
-      padding: 50px 40px 20px;
-      border-radius: 5px;
-      &:hover{
-        box-shadow: 0 0 10px 0 $light-grey;
-      }
-      img{
-        margin: 0 auto;
-      }
-      .name{
-        margin-top: 20px;
-        margin-bottom: 10px;
-      }
-      .name,.color{
-        font-family: Intro-Book, Arial, Helvetica, sans-serif;
-      }
-      .price{
-        margin-top: 10px;
-        font-family: Intro-Bold, Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        vertical-align: middle;
-        div{
-          display: inline-block;
+    .show{
+      padding: 50px 0 100px;
+        .item{
+        position: relative;
+        box-sizing:border-box;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        padding: 50px 40px 20px;
+        border-radius: 5px;
+        img{
+          margin: 0 auto;
         }
-        .new{
-          color: $red;
+        .name{
+          margin-top: 20px;
+          margin-bottom: 10px;
         }
-        .old{
-          margin-left: 5px;
-          color: $light-grey;
-          font-size: 12px;
-          text-decoration: line-through; 
+        .name,.color{
+          font-family: Intro-Book, Arial, Helvetica, sans-serif;
+        }
+        .price{
+          margin-top: 10px;
+          font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+          font-size: 18px;
+          vertical-align: middle;
+          div{
+            display: inline-block;
+          }
+          .new{
+            color: $red;
+          }
+          .old{
+            margin-left: 5px;
+            color: $light-grey;
+            font-size: 12px;
+            text-decoration: line-through;
+          } 
         }
       }
+    }
+    .bx-prev{
+      left: -40px;
+    }
+    .bx-next{
+      right: -40px;
     }
   }
 
   .news{
+    padding: 50px 0 70px;
     .item{
       position: relative;
       display: inline-block;
@@ -212,10 +235,49 @@
       text-align: center;
     }
   }
-
-
-
-  .bx-warpper{
+  .about-wrapper{
+    background: #f7f7f7;
+    .about{
+      min-height: 670px;
+      padding-top: 85px;
+      background: url(../img/about.jpg) no-repeat 50% 0;
+    }
+    .head{
+      div{
+        display: inline-block;
+      }
+      .title{
+        font-family: Intro-Bold, Arial, Helvetica, sans-serif;
+        font-size: 26px;
+        text-transform: uppercase;
+      }
+      .urls{
+        float: right;
+        a{
+          font-family: Intro-Book, Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          margin-left: 40px;
+        }
+        .active{
+          color: $blue;
+          text-decoration: underline;
+        }
+      }
+    }
+    .text{
+      margin-top: 120px;
+      width: 430px;
+      font-family: Intro-Book, Arial, Helvetica, sans-serif;
+      h3{
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+  .bx-wrapper{
     margin: 0;
   }
   .bx-wrapper .bx-pager{
