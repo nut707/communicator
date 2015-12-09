@@ -2,9 +2,11 @@
 $(document).ready(function($) {
 
   $('.slide').click(function() {
-    console.log('sdfsdf')
     var url=$(this).find('img').attr('src')
     $('.zoom img').attr('src', url)
+    $('.pager .active').removeClass('active')
+    $(this).addClass('active')
+
   });
   //show cart button on catalog
   $('.item').hover(function(){
