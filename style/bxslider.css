@@ -103,20 +103,24 @@
 
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url(images/controls.png) no-repeat 0 -32px;
+  background: url(../img/slider-control.png) no-repeat 50% 60%;
+  transform: rotate(90deg);
 }
 
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url(images/controls.png) no-repeat -43px -32px;
+  background: url(../img/slider-control.png) no-repeat 50% 60%;
+  transform: rotate(-90deg);
 }
 
 .bx-wrapper .bx-prev:hover {
-  background-position: 0 0;
+  border-color: #333;
+  background-position: 50% 18px;
 }
 
 .bx-wrapper .bx-next:hover {
-  background-position: -43px 0;
+  border-color: #333;
+  background-position: 50% 18px;
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -124,8 +128,10 @@
   top: 50%;
   margin-top: -16px;
   outline: 0;
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #cacaca;
+  border-radius: 100%;
   text-indent: -9999px;
   z-index: 9999;
 }

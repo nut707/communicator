@@ -2,6 +2,12 @@
   .baner-wrapper{
     background: url(../img/background.png);
     padding: 60px 0;
+    .bx-wrapper .bx-controls-direction a{
+      border: none;
+    }
+    .bx-pager-item .bx-pager-link{
+      background: #cacaca;
+    }
   }
   .yellow-button{
     position: absolute;
